@@ -1,0 +1,238 @@
+/* Font and background */
+body {
+    background-color: rgb(176,183,188);
+    font-family: Garamond;
+
+
+  .title, h2{
+    color: rgb(206,15,61);
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    margin-bottom:0 ;
+  }
+  
+   h2 {
+   font-size: 20px;
+   color: rgb(96,96,96);
+   margin-top:0 ;
+  }
+  
+  hr {
+    border: 1px solid rgb(206,15,61);
+    border-width: 2px;
+  }
+  
+  /* set up of vertical line */
+  .timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    /* Stops at the last date */
+    height: 99%;
+    background: rgb(206,15,61);
+  }
+  
+  .timeline {
+    /* distance of boxes from timeline */
+    width: 60%;
+  /* start postion in the screen */
+    margin: 70px auto;
+    position: relative;
+  
+    article:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* each independent */
+    article {
+      width: 100%;
+      margin: 0 0 80px 0;
+      position: relative;
+    
+        
+       div.left,div.right {
+        width: 40%;
+        float: left;
+        margin: 5px 0 0 0;
+        border-radius: 6px;
+      }
+
+       div.right {
+        float: right;
+      }
+    
+      /* designs the appearance of the date */
+       div.date {  
+        /* creates circle */
+        width: 60px;
+        height: 50px;
+        padding: 5px 0;
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 -32px;
+        border-radius: 100%;
+        background: rgb(176,183,188);
+        color: rgb(206,15,61);
+        border: 2px solid rgb(176,183,188);
+        box-shadow: 0 0 0 7px rgb(206,15,61);
+        font-weight: 900;
+        display:inline;
+        text-align: center;
+      
+        span.month {
+          font-size: 19px;
+        }
+        span.year {
+          font-size: 15px;
+        }
+        span.only_year {
+          font-size: 22px;
+        }
+
+      }
+
+     h2{
+        font-size: 15px;
+        padding: 10px;
+        color: rgb(176,183,188);
+        background-color:rgb(206,15,61) ;
+        border-radius: 6px 6px 0 0;
+      }
+      
+       div.left h2::after{
+        content: " ";
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        border: solid;
+        border-width: 8px 2px 8px 8px;
+        border-color: transparent transparent transparent rgb(206,15,61) ;
+      }
+      
+       div.right h2::after{
+        content: " ";
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        border: solid;
+        border-width: 8px 8px 8px 2px;
+        border-color: transparent rgb(206,15,61)  transparent transparent;
+      }
+      
+     p{
+        font-size: 15px;
+        padding: 20px;
+        margin: 0;
+        color: rgb(96,96,96);
+        background-color: rgb(176,183,188);
+        border-radius: 0 0 6px 6px;
+        border:solid;
+        border-color: rgb(206,15,61);
+        text-align: left;
+        position:relative;
+      }
+
+      .button {
+        float: right;
+        font-family: Garamond;
+        font-size: 13px;
+        padding: 20px,15px;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        color: rgb(96,96,96);
+        box-shadow: 0 0 0 2px rgb(206,15,61);
+      }
+
+      .button:hover {background-color: rgb(176,183,188)}
+
+      .button:active {
+        background-color: rgb(176,183,188);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }  
+    }
+  }
+
+  #page-layout{
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-layout {
+    padding-bottom: 0px;    /* Footer height */
+  }
+  
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;   
+  }
+  .footer_info{
+    position:relative;
+      width:auto;
+      height:130px;
+      background-color:rgb(206,15,61) ;
+      overflow: auto;
+      overflow-y: hidden;
+      display: flex;
+      color: rgb(176,183,188);
+   }
+  
+  
+  .footer h3{
+    text-align: center;
+  }
+   .osu_info,  .contact_info{
+     text-align: center;
+      font-size: 13px;
+      line-height: 2px;
+      float: left;
+      top:10px;
+     position:relative;
+      left: 345px;
+   }
+   
+   .contact_info{
+      float: left;
+      text-align: center;
+      margin-left:0px;
+      left: 555px;
+   }
+   
+   .osu_info_detail{
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+   }
+   
+   .left_contact{
+   text-align: left;
+    float: left;
+    margin-right: 25px;
+    }
+    
+    .right_contact{
+    text-align: left;
+      float: right;
+    }
+    
+    .osu_img{
+    
+      width:110px;
+      height:110px;
+      top: 10px;/* Position element */
+      left: 10px; /* Position element */ 
+      bottom: 10px;
+      position: absolute;
+      }  
+}

@@ -1,0 +1,21 @@
+<%# File Created 10/11/2019 by Neel Mansukhani
+    Edited 10/12/2019 by Neel Mansukhani
+%>
+
+<%# HTML format for people page. %>
+<%
+require 'json'
+html_dir = File.dirname(__FILE__)
+fjson = JSON.parse File.read "#{html_dir}/student_data.json"
+alumni = fjson['alumni']
+current_students = fjson['current_students']
+current_page.data.title = "People"
+%>
+    <% alumni.each_key do |name| %>
+        <%= partial "../partials/person",
+                    :locals => {:name => name,
+                                :description => alumni[name]['description'],
+                                :title => alumni[name]['title'],
+                                :current_job => alumni[name]['current_job']} %>
+    <% end %>
+  

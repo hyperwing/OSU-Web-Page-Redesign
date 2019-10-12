@@ -1,0 +1,11 @@
+<div class="person-container">
+    <div class="picture">
+        <img src="../images/blank-profile.png"/>
+    </div>
+    <div class="text-container">
+        <%= "<div>Name: #{name}</div>" if !name.nil?%>
+        <%= "<div>Title: #{title}</div>" if !title.nil?%>
+        <%= "<div>Description: #{description}</div>" if !description.nil?%>
+        <%= "<div>Current Job: #{current_job}</div>" if !current_job.nil?%>
+    </div>
+</div>

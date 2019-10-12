@@ -1,7 +1,12 @@
 <%# File created 10/10/2019 by Sri Ramya Dandu
-    Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON%>
-
-<%#Html format for publication page%>
+    Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON
+    Edited 10/12/2019 by Neel Mansukhani: Added page title and navbar
+<<<<<<< HEAD
+    Edited 10/13/2019 by Sri Ramya Dandu: Made it compatible with the layout
+=======
+>>>>>>> d278ecdb272e161522927f16c7066bbe68b1327b
+%>
+<%# HTML format for publication page. %>
 
 <% 
 require 'json'
@@ -19,178 +24,9 @@ dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2
 'OCT 2001', 'JUL 2001', 'JUN 2001', '2000','DEC 2000', 'JUN 2000', 'NOV 2000','1999', 'MAY 1999', 'SEP 1999',
 'MAR 1999', '1998', 'NOV 1998', 'APR 1998', 'MAR 1998', 'OCT 1997', 'JUN 1997', 'JUN 1997','1997', '1996',
 'AUG 1996', '1994', '1994', 'OCT 1994']
+current_page.data.title = "Publications"
+
 %>
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Publications</title>
-<style>
-  /* Font and background */
-  body {
-    background-color: rgb(176,183,188);
-    font-family: Garamond;
-    
-  }
-  
-  .title, h2{
-    color: rgb(206,15,61);
-    font-size: 80px;
-    text-align: center;
-    position: relative;
-    margin-bottom:0 ;
-  }
-  
-   h2 {
-   font-size: 20px;
-   color: rgb(96,96,96);
-   margin-top:0 ;
-  }
-  
-  hr {
-    border: 1px solid rgb(206,15,61);
-    border-width: 2px;
-  }
-  
-  .timeline {
-    /* distance of boxes from timeline */
-    width: 60%;
-  /* start postion in the screen */
-    margin: 70px auto;
-    position: relative;
-  }
-  
-  /* set up of vertical line */
-  .timeline:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 2px;
-    /* Stops at the last date */
-    height: 100%;
-    background: rgb(206,15,61);
-  }
-  
-  /* each independent */
-  article {
-    width: 100%;
-    margin: 0 0 80px 0;
-    position: relative;
-  }
-    
-  article:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  article div.left,div.right {
-    width: 40%;
-    float: left;
-    margin: 5px 0 0 0;
-    border-radius: 6px;
-  }
-
-  article div.right {
-    float: right;
-  }
- 
-  /* designs the appearance of the date */
-  article div.date {  
-    /* creates circle */
-    width: 60px;
-    height: 50px;
-    padding: 5px 0;
-    position: absolute;
-    left: 50%;
-    margin: 0 0 0 -32px;
-    border-radius: 100%;
-    background: rgb(176,183,188);
-    color: rgb(206,15,61);
-    border: 2px solid rgb(176,183,188);
-    box-shadow: 0 0 0 7px rgb(206,15,61);
-    font-weight: 900;
-    display:inline;
-    text-align: center;
-  }
-
-  article div.date span.month {
-    font-size: 19px;
-  }
-  article div.date span.year {
-    font-size: 15px;
-  }
-
-  article div.date span.only_year {
-    font-size: 22px;
-  }
-
- article h2{
-    font-size: 15px;
-    padding: 10px;
-    color: rgb(176,183,188);
-    background-color:rgb(206,15,61) ;
-    border-radius: 6px 6px 0 0;
-  }
-  
-  article div.left h2::after{
-    content: " ";
-    position: absolute;
-    top: 20px;
-    right: -10px;
-    border: solid;
-    border-width: 8px 2px 8px 8px;
-    border-color: transparent transparent transparent rgb(206,15,61) ;
-  }
-  
-   article div.right h2::after{
-    content: " ";
-    position: absolute;
-    top: 20px;
-    left: -10px;
-    border: solid;
-    border-width: 8px 8px 8px 2px;
-    border-color: transparent rgb(206,15,61)  transparent transparent;
-  }
-  
- article p{
-    font-size: 15px;
-    padding: 20px;
-    margin: 0;
-    color: rgb(96,96,96);
-    background-color: rgb(176,183,188);
-    border-radius: 0 0 6px 6px;
-    border:solid;
-    border-color: rgb(206,15,61);
-    text-align: left;
-    position:relative;
-  }
-
-  .button {
-    float: right;
-    font-family: Garamond;
-    font-size: 13px;
-    padding: 20px,15px;
-    border-radius: 15px;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    color: rgb(96,96,96);
-    box-shadow: 0 0 0 2px rgb(206,15,61);
-  }
-  
-  .button:hover {background-color: rgb(176,183,188)}
-
-  .button:active {
-    background-color: rgb(176,183,188);
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-}
-</style>
-</head>
-<body>
 
   <h1 class = "title"> Publications </h1>
   <h2> Jim Davis <h2>
@@ -243,6 +79,7 @@ dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2
       </article>
       <%count += 1 %>
     <%end %>
+
+    </br>
+    
   </div>
-</body>
-</html>
