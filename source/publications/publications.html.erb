@@ -1,0 +1,248 @@
+<%# File created 10/10/2019 by Sri Ramya Dandu
+    Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON%>
+
+<%#Html format for publication page%>
+
+<% 
+require 'json'
+html_dir = File.dirname(__FILE__)
+publications_hash = JSON.parse(File.read("#{html_dir}/publications.json"))
+
+dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2015", "SEP 2014", "AUG 2014",
+"JUN 2014", "2013", "NOV 2012","NOV 2012", "2012", "2011","2011", "JUN 2011", "JUN 2011",
+"JAN 2011", "NOV 2010", "NOV 2010","NOV 2010","NOV 2010","AUG 2010","AUG 2010", "2010",
+"OCT 2009", 'JUL 2009', 'FEB 2009', 'DEC 2008','SEP 2008', 'JUN 2008', 'JUN 2008','JAN 2008',
+'JAN 2008', 'JAN 2008', 'OCT 2007', 'JUN 2007', 'JUN 2007', '2007','2007', 'FEB 2007','FEB 2007',
+'FEB 2007', '2007', '2007', 'OCT 2006', 'OCT 2006', '2006', 'JUN 2006', 'JUN 2006', 'MAY 2006', '2006',
+'SEP 2005', 'SEP 2005', 'JUN 2005', 'JAN 2005', '2004', 'AUG 2004', 'JUL 2004', 'JUL 2004', 'JUN 2004',
+'2004','2003', 'OCT 2003', 'JUL 2003', 'DEC 2002', '2002', 'AUG 2002', 'JUL 2002', '2001', 'NOV 2001',
+'OCT 2001', 'JUL 2001', 'JUN 2001', '2000','DEC 2000', 'JUN 2000', 'NOV 2000','1999', 'MAY 1999', 'SEP 1999',
+'MAR 1999', '1998', 'NOV 1998', 'APR 1998', 'MAR 1998', 'OCT 1997', 'JUN 1997', 'JUN 1997','1997', '1996',
+'AUG 1996', '1994', '1994', 'OCT 1994']
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Publications</title>
+<style>
+  /* Font and background */
+  body {
+    background-color: rgb(176,183,188);
+    font-family: Garamond;
+    
+  }
+  
+  .title, h2{
+    color: rgb(206,15,61);
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    margin-bottom:0 ;
+  }
+  
+   h2 {
+   font-size: 20px;
+   color: rgb(96,96,96);
+   margin-top:0 ;
+  }
+  
+  hr {
+    border: 1px solid rgb(206,15,61);
+    border-width: 2px;
+  }
+  
+  .timeline {
+    /* distance of boxes from timeline */
+    width: 60%;
+  /* start postion in the screen */
+    margin: 70px auto;
+    position: relative;
+  }
+  
+  /* set up of vertical line */
+  .timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    /* Stops at the last date */
+    height: 100%;
+    background: rgb(206,15,61);
+  }
+  
+  /* each independent */
+  article {
+    width: 100%;
+    margin: 0 0 80px 0;
+    position: relative;
+  }
+    
+  article:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  article div.left,div.right {
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+  }
+
+  article div.right {
+    float: right;
+  }
+ 
+  /* designs the appearance of the date */
+  article div.date {  
+    /* creates circle */
+    width: 60px;
+    height: 50px;
+    padding: 5px 0;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -32px;
+    border-radius: 100%;
+    background: rgb(176,183,188);
+    color: rgb(206,15,61);
+    border: 2px solid rgb(176,183,188);
+    box-shadow: 0 0 0 7px rgb(206,15,61);
+    font-weight: 900;
+    display:inline;
+    text-align: center;
+  }
+
+  article div.date span.month {
+    font-size: 19px;
+  }
+  article div.date span.year {
+    font-size: 15px;
+  }
+
+  article div.date span.only_year {
+    font-size: 22px;
+  }
+
+ article h2{
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(176,183,188);
+    background-color:rgb(206,15,61) ;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  article div.left h2::after{
+    content: " ";
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    border: solid;
+    border-width: 8px 2px 8px 8px;
+    border-color: transparent transparent transparent rgb(206,15,61) ;
+  }
+  
+   article div.right h2::after{
+    content: " ";
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    border: solid;
+    border-width: 8px 8px 8px 2px;
+    border-color: transparent rgb(206,15,61)  transparent transparent;
+  }
+  
+ article p{
+    font-size: 15px;
+    padding: 20px;
+    margin: 0;
+    color: rgb(96,96,96);
+    background-color: rgb(176,183,188);
+    border-radius: 0 0 6px 6px;
+    border:solid;
+    border-color: rgb(206,15,61);
+    text-align: left;
+    position:relative;
+  }
+
+  .button {
+    float: right;
+    font-family: Garamond;
+    font-size: 13px;
+    padding: 20px,15px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: rgb(96,96,96);
+    box-shadow: 0 0 0 2px rgb(206,15,61);
+  }
+  
+  .button:hover {background-color: rgb(176,183,188)}
+
+  .button:active {
+    background-color: rgb(176,183,188);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+}
+</style>
+</head>
+<body>
+
+  <h1 class = "title"> Publications </h1>
+  <h2> Jim Davis <h2>
+  <hr>
+  
+  <div class = "timeline">
+  <% count = 0 %>
+  <% direction = "right" %> 
+  <% publications_hash.each do |title, info| %>
+    <article>
+    <%# location of article on page %>
+    <% if count % 2 == 0 
+          direction = "right"
+        else 
+          direction = "left"
+        end %>
+      <div class = <%= direction %> >
+      <div class="date">
+
+      <%# handles both formats of date %>
+      <% if dates[count].split(" ").length == 2 %>
+        <span class="month"> <%= dates[count].split(" ").first %> </span>
+        <span class="year"><%=  dates[count].split(" ").last %></span>
+      <% else %> 
+        <span class="only_year"> <%= dates[count].split(" ").first %> </span>
+      <%end %>
+      </div>
+      <h2> <%= title %> </h2>
+      <p>  Authors: <i> <%=info[0]%> </i></br></br>
+      <i><%=info[1]%></i></br>
+
+      <%# Prints any info regarding the article that is not being printed already%>
+      <% info.each_index do |i| 
+        if i > 1 && i != info.length-1  %>
+          <%= info[i] %> 
+          </br>
+        <% end %>
+      <%end%>
+
+      <%# prints all links as buttons %>
+      <% count_href = info.last.length 
+        while count_href > 0 %>
+          </br>
+          <button class = "button" onclick="location.href= '<%=info.last[info.last.length - count_href]%>'" type="button">Read More</button>
+          </br>
+          <% count_href -= 1 
+        end %>   
+      </p>
+      </div>
+      </article>
+      <%count += 1 %>
+    <%end %>
+  </div>
+</body>
+</html>
