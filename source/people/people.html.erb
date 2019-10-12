@@ -1,0 +1,30 @@
+<!--File Created 10/11/2019 by Neel Mansukhani-->
+<%
+require 'json'
+html_dir = File.dirname(__FILE__)
+fjson = JSON.parse File.read "#{html_dir}/student_data.json"
+alumni = fjson['alumni']
+current_students = fjson['current_students']
+current_page.data.title = "People"
+%>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag 'people' %>
+  </head>
+  <body>
+    <% alumni.each_key do |name| %>
+        <%= partial "person",
+                    :locals => {:name => name,
+                                :description => alumni[name]['description'],
+                                :title => alumni[name]['title'],
+                                :current_job => alumni[name]['current_job']} %>
+    <% end %>
+  </body>
+</html>
