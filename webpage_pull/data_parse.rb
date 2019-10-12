@@ -47,7 +47,7 @@ def hash_lists_media_press(type, current_list)
             if href_exists != nil
                 href_exists.each {|href| hrefs_array.push ("https://web.cse.ohio-state.edu/~davis.1719/" + href["href"])} # Add's all href's to array
             end
-            media_and_links[list_item.text] = hrefs_array
+            media_and_links[list_item.text.gsub(/["\"|\n]*/,'')] = hrefs_array
         end
     else # If it's print
         current_list.css('li').each do |list_item|
@@ -67,7 +67,7 @@ def hash_lists_media_press(type, current_list)
                 if category.include? "Print"
                     media_and_links[list_item.text.gsub(/Print:[\n]*/,'')] = hrefs_array
                 else
-                    media_and_links[list_item.text.gsub(/[\|\n]*/,'')] = hrefs_array
+                    media_and_links[list_item.text.gsub(/["\"|\n]*/,'')] = hrefs_array
                 end
             end
         end
