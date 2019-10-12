@@ -1,7 +1,8 @@
 <%# File created 10/10/2019 by Sri Ramya Dandu
-    Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON%>
-
-<%#Html format for publication page%>
+    Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON
+    Edited 10/12/2019 by Neel Mansukhani: Added page title and navbar
+%>
+<%# HTML format for publication page. %>
 
 <% 
 require 'json'
@@ -19,12 +20,14 @@ dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2
 'OCT 2001', 'JUL 2001', 'JUN 2001', '2000','DEC 2000', 'JUN 2000', 'NOV 2000','1999', 'MAY 1999', 'SEP 1999',
 'MAR 1999', '1998', 'NOV 1998', 'APR 1998', 'MAR 1998', 'OCT 1997', 'JUN 1997', 'JUN 1997','1997', '1996',
 'AUG 1996', '1994', '1994', 'OCT 1994']
+current_page.data.title = "Appointments"
+
 %>
 
 <!DOCTYPE html>
 <html>
 <head>
-<title>Publications</title>
+<title><%= current_page.data.title %></title>
 <style>
   /* Font and background */
   body {
@@ -186,12 +189,12 @@ dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2
     background-color: rgb(176,183,188);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+  }  
 }
 </style>
 </head>
 <body>
-
+  <%= partial "../partials/navbar" %>
   <h1 class = "title"> Publications </h1>
   <h2> Jim Davis <h2>
   <hr>

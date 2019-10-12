@@ -1,13 +1,16 @@
-<%# File created 10/11/2019 by Leah Gillespie%>
+<%# File created 10/11/2019 by Leah Gillespie
+    Edited 10/12/2019 by Neel Mansukhani: Added page title and navbar
+%>
 
-<%#Html format for appointments and teaching page%>
-
+<%# HTML format for appointments and teaching page. %>
+<% current_page.data.title = "Appointments"%>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Teaching Appointments</title>
+    <title><%= current_page.data.title %></title>
   </head>
   <body>
+    <%= partial "../partials/navbar" %>
     <h1>Teaching Appointments</h1>
     <h2>Current Appointments</h2>
     <ul>
