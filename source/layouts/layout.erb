@@ -1,3 +1,5 @@
+<%# Edited 10/12/2019 by Sri Ramya Dandu: Moved Neel's layout into here and fixed stylesheet %>
+
 <!doctype html>
 <html>
   <head>
@@ -7,10 +9,63 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <% case current_page.data.title %>
+    <% when "Publications" %>
+       <%= stylesheet_link_tag 'publications' %>
+    <% when "People" %>
+       <%= stylesheet_link_tag 'people' %>
+    <% else %>
+      <%= stylesheet_link_tag "site" %>
+    <%end%>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+  
+      <div class="navbar">
+      <ul>
+          <li><a class="<%=current_page.data.title == "People" ? "active": "inactive"%>" href="../people/people.html">People</a></li>
+          <li><a class="<%=current_page.data.title == "Publications" ? "active": "inactive"%>" href="../publications/publications.html">Publications</a></li>
+          <li><a class="<%=current_page.data.title == "Appointments" ? "active": "inactive"%>" href="../appointments/appointments.html">Appointments</a></li>
+          <li style="float:right"><a class="<%=current_page.data.title == "People" ? "active": "inactive"%>" href="../index.html">Home</a></li>
+      </ul>
+    </div>
+  
     <%= yield %>
+
+    <footer>
+    <div class = "footer_info">
+    
+    <img src="https://www.skinit.com/media/catalog/product/cache/9dbe6a0c16a5b581719a1aa389879cfc/b/c/bckeye03_11.jpg" alt="OSU" class = "osu_img">
+    
+      <div class= "osu_info" >
+          <h3> The Ohio State University </h3>
+          
+          <div class= "osu_info_detail">
+          <h4> <a href = "http://www.cse.ohio-state.edu">Dept. of Computer Science and Engineering</a> </h4>
+          <h4> 491 Dreese Laboratories, 2015 Neil Avenue </h4>
+          <h4> Columbus, OH 43210</h4>
+        </div>
+      </div>
+        
+        
+     <div class= "contact_info"> 
+           <h3> Contact Info </h3>
+              
+              <div class = "left_contact"> 
+                <h4> <a href="mailto:jwdavis@cse.ohio-state.edu">jwdavis@cse.ohio-state.edu</a> </h4>
+                <h4> Office: 614-292-1553 </h4>
+                <h4>  <a href = "https://web.cse.ohio-state.edu/~davis.1719/directions.html">Directions to my office</a> </h4>
+             </div>
+             
+             <div class = "right_contact"> 
+             <h4> Lab: 614-292-5137  </h4>
+            <h4> Fax: 614-292-2911</h4>
+             </div>
+     </div>
+     </div>
+   </footer>
+    
+    
+
   </body>
 </html>

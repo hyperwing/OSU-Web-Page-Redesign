@@ -7,6 +7,7 @@ body {
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   padding: 18vh 1rem;
   text-align: center;
+  height: 100%;
 }
 
 a {
@@ -22,3 +23,62 @@ a {
   margin-bottom: 1rem;
   width: 10rem;
 }
+
+.footer_info{
+  position:relative;
+    width:auto;
+    height:130px;
+    background-color:rgb(206,15,61) ;
+    overflow: auto;
+    overflow-y: hidden;
+    display: flex;
+    color: rgb(176,183,188);
+ }
+
+.footer h3{
+  text-align: center;
+}
+ .osu_info,  .contact_info{
+   text-align: center;
+    font-size: 13px;
+    line-height: 2px;
+    float: left;
+    top:10px;
+   position:relative;
+    left: 345px;
+ }
+ 
+ .contact_info{
+    float: left;
+    text-align: center;
+    margin-left:0px;
+    left: 555px;
+ }
+ 
+ .osu_info_detail{
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+ }
+ 
+ .left_contact{
+ text-align: left;
+  float: left;
+  margin-right: 25px;
+  }
+  
+  .right_contact{
+  text-align: left;
+    float: right;
+  }
+  
+  .osu_img{
+  
+    width:110px;
+    height:110px;
+    top: 10px;/* Position element */
+    left: 10px; /* Position element */ 
+    bottom: 10px;
+    position: absolute;
+    }  
+    
