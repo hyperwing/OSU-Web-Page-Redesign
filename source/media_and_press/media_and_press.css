@@ -1,0 +1,58 @@
+/*File created 10/10/2019 by Sharon Qiu
+    Stylesheet for media and press
+*/
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    background-color: white;
+    font-style: Garamond;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+}
+
+/*Intended for title of the section (radio, print, etc)*/
+h2.section-name {
+    font-size: 30;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+article.article-item {
+    display: block;
+}
+
+section.article-src {
+    font-size: 12;
+    font-weight: normal;
+    text-align: left;
+}
+
+.media-press-item {
+    font-size: 18;
+    font-weight: bold;
+}
+
+a {
+    font-size: 10;
+    font-weight: normal;
+}
+
+.article-separator {
+    border-bottom: 1px dashed red;
+}
+
+
+
+
+
