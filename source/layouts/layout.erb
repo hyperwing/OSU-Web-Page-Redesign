@@ -1,4 +1,5 @@
-<%# Edited 10/12/2019 by Sri Ramya Dandu: Moved Neel's layout into here and fixed stylesheet %>
+<%# Edited 10/12/2019 by Sri Ramya Dandu: Moved Neel's layout into here and fixed stylesheet 
+    Edited 10/12/2019 by Sri Ramya Dandu: Added the footer %>
 
 <!doctype html>
 <html>
@@ -21,6 +22,8 @@
   </head>
   <body>
   
+    <div id= "page-layout">
+      <div id= "content-layout">
       <div class="navbar">
       <ul>
           <li><a class="<%=current_page.data.title == "People" ? "active": "inactive"%>" href="../people/people.html">People</a></li>
@@ -31,11 +34,11 @@
     </div>
   
     <%= yield %>
-
-    <footer>
+  </div>
+    <footer id = "footer">
     <div class = "footer_info">
     
-    <img src="https://www.skinit.com/media/catalog/product/cache/9dbe6a0c16a5b581719a1aa389879cfc/b/c/bckeye03_11.jpg" alt="OSU" class = "osu_img">
+    <img src="../images/osu_logo.jpg" alt="OSU" class = "osu_img">
     
       <div class= "osu_info" >
           <h3> The Ohio State University </h3>
@@ -65,7 +68,7 @@
      </div>
    </footer>
     
-    
+    </div>
 
   </body>
 </html>

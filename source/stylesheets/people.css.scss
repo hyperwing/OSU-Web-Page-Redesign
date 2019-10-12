@@ -65,9 +65,25 @@ body {
             background-color: #4CAF50;
         }
     }
-<<<<<<< HEAD
 
-    .footer_info{
+    #page-layout{
+        position: relative;
+        min-height: 100vh;
+      }
+      
+      #content-layout {
+        padding-bottom: 0px;    /* Footer height */
+      }
+      
+      
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 10px;
+        height: 0px;   
+      }
+      .footer_info{
         position:relative;
           width:auto;
           height:130px;
@@ -124,7 +140,5 @@ body {
           bottom: 10px;
           position: absolute;
           }  
-=======
->>>>>>> d278ecdb272e161522927f16c7066bbe68b1327b
     
 }
