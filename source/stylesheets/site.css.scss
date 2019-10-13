@@ -1,3 +1,4 @@
+// Created 10/10/2019 by Middleman
 body {
   background-color: rgb(176,183,188);
   font-family: Garamond;
@@ -7,24 +8,22 @@ body {
   margin: 0;
   padding: 100px 0;
   font-weight: bold;
+  height: 100%;
+
 }
 
 a {
   color: rgba(#000, 0.7);
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+    font:"garamond";
+    padding: 18vh 1rem;
+    text-align: center;
+    height: 100%;
 }
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
-}
-
+  
 @import 'people';
 @import 'page_navbar';
 @import 'publications';
 @import 'media_and_press';
 @import 'page_footer';
+@import 'about_me';
