@@ -7,6 +7,8 @@ body {
   margin: 0;
   padding: 100px 0;
   font-weight: bold;
+  height: 100%;
+
 }
 
 a {
@@ -18,12 +20,6 @@ a {
     height: 100%;
 }
   
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
-}
-
 @import 'people';
 @import 'page_navbar';
 @import 'publications';
