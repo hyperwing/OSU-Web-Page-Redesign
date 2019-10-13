@@ -1,5 +1,7 @@
 <%# File Created 10/11/2019 by Neel Mansukhani
     Edited 10/12/2019 by Neel Mansukhani
+    Edited 10/12/2019 by Sri Ramya Dandu: Fixed bug to link to application page
+    Edited 10/12/2019 by Sharon Qiu: Added Media page 
 %>
 
 <%# Partial for navbar %>
@@ -7,6 +9,7 @@
     <ul>
         <li><a class="<%=current_page.data.title == "People" ? "active": "inactive"%>" href="../people/current_students.html">People</a></li>
         <li><a class="<%=current_page.data.title == "Publications" ? "active": "inactive"%>" href="../publications/publications.html">Publications</a></li>
+        <li><a class="<%=current_page.data.title == "media_and_press" ? "active": "inactive"%>" href="../media_and_press/media_and_press.html">Media and Press</a></li>
         <li><a class="<%=current_page.data.title == "Appointments" ? "active": "inactive"%>" href="../appointments/appointments.html">Appointments</a></li>
         <li><a class="<%=current_page.data.title == "media_and_press" ? "active": "inactive"%>" href="../media_and_press/media_and_press.html">Media and Press</a></li>
         <li style="float:right"><a class="<%=current_page.data.title == "People" ? "active": "inactive"%>" href="../index.html">Home</a></li>

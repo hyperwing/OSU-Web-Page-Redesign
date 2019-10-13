@@ -1,6 +1,10 @@
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* Edited 10/10/2019 by Sri Ramya Dandu */
+/* CSS for Publications Page */
+
+/* Created 10/10/2019 by Sri Ramya Dandu */
+/* CSS for Publication Page */
 /* Font and background */
-
-
 .publications-page .title, h2{
   color: rgb(206,15,61);
   font-size: 80px;
@@ -101,6 +105,7 @@ h2{
   border-radius: 6px 6px 0 0;
 }
 
+/* triangles for the cards */
   div.left h2::after{
   content: " ";
   position: absolute;

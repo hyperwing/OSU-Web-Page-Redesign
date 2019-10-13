@@ -1,8 +1,13 @@
 // Created 10/10/2019 by Middleman
+/* Edited 10/12/2019 by Sri Ramya Dandu: add the partials */
+/* Main CSS for the website */
 body {
   background-color: rgb(176,183,188);
   font-family: Garamond;
+<<<<<<< HEAD
  
+=======
+>>>>>>> 6fe386c0f2bb43c379a191de07bfe64f148341b7
   text-align: center;
   height: 100%;
   margin: 0;
@@ -22,6 +27,7 @@ a {
 }
   
 @import 'people';
+@import 'media_and_press';
 @import 'page_navbar';
 @import 'publications';
 @import 'media_and_press';
