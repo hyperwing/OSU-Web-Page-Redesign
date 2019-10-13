@@ -1,4 +1,9 @@
+// File Created 10/10/2019 by David Wing
+// Edited 10/11/2019 by David Wing
+// Edited 10/12/2019 by David Wing
+// TODO: Add all education.
 body {
+  // TODO: fix body, add class
   background-color: #666666;
   color: #333;
 
@@ -10,37 +15,37 @@ body {
 
 
 .left {
-width: 15%;
-height: 100%;
-float: left;
-background-color: #8F1001;
-border-collapse: collapse;
+  width: 15%;
+  height: 100%;
+  float: left;
+  background-color: #8F1001;
+  border-collapse: collapse;
 }
 
 .middle {
-width: 70%;
-height: 100%;
-float: left;
-border-collapse: collapse;
+  width: 70%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
 }
 
 .right {
-width: 15%;
-height: 100%;
-position: relative;
-float: right;
-background-color: #8F1001;
-border-collapse: collapse;
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-color: #8F1001;
+  border-collapse: collapse;
 }
 
 
 #cf {
-position:relative;
-height:400px;
-left:30%;
-margin:auto;
-animation-name: imageAnimation;
-animation-duration: 2s;
+  position:relative;
+  height:400px;
+  left:30%;
+  margin:auto;
+  animation-name: imageAnimation;
+  animation-duration: 2s;
 }
 
 #cf img {
@@ -55,8 +60,8 @@ animation-duration: 2s;
 
 
 #side-image{
-animation-name: imageAnimation;
-animation-duration: 2s;
+  animation-name: imageAnimation;
+  animation-duration: 2s;
 }
 
 
@@ -98,6 +103,7 @@ animation-fill-mode: both;
 }
 }
 
+// Animation with speed for images.
 @keyframes imageAnimation {
 0% {
   transform: translateY(-50px);
@@ -109,6 +115,7 @@ animation-fill-mode: both;
 }
 }
 
+// Animation with speed for subtitles
 @keyframes subAnimation {
     0% {
       transform: translateY(-50px);

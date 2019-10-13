@@ -1,3 +1,4 @@
+<%# TODO: Add documentation and comments and make 1 multi-line erb%>
 <%get_bold = Regexp.new(/<b.*b>/)%> 
 <%get_link_types = Regexp.new(/\[.*\]/)%>
 <%get_article_title = Regexp.new(/\/b>.*?</)%> 
@@ -11,7 +12,7 @@
     <p>
     <%count = 0%>
     <%links.each do |link|%>
-        <%="<a href=#{link}>#{article_link_types[count]}</a>"%>
+        <%="<a href=#{links}>#{article_link_types[count]}</a>"%>
         <%count += 1%>
     <%end%>
     </p>

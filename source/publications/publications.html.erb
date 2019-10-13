@@ -8,7 +8,7 @@
 <% 
 require 'json'
 html_dir = File.dirname(__FILE__)
-publications_hash = JSON.parse(File.read("#{html_dir}/publications.json"))
+publications_hash = JSON.parse(File.read("#{html_dir}/../data/publications.json"))
 
 dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2015", "SEP 2014", "AUG 2014",
 "JUN 2014", "2013", "NOV 2012","NOV 2012", "2012", "2011","2011", "JUN 2011", "JUN 2011",
@@ -68,6 +68,7 @@ current_page.data.title = "Publications"
       <% count_href = info.last.length 
         while count_href > 0 %>
           </br>
+          <%# move to form instead of onclick %>
           <button class = "button" onclick="location.href= '<%=info.last[info.last.length - count_href]%>'" type="button">Read More</button>
           </br>
           <% count_href -= 1 
