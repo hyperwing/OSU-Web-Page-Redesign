@@ -27,7 +27,7 @@ def media_press_cache(page)
     end
 
     # Saves as json 
-    json_file = File.open('../source/data/media_and_press.json', 'w') {|file| JSON.dump(information, file)}
+    json_file = File.open('media_and_press.json', 'w') {|file| JSON.dump(information, file)}
     json_file.close
 end
 
@@ -49,7 +49,7 @@ def hash_lists_media_press(type, current_list)
             if href_exists != nil
                 href_exists.each {|href| hrefs_array.push ("https://web.cse.ohio-state.edu/~davis.1719/" + href["href"])} # Add's all href's to array
             end
-            media_and_links[list_item.text] = hrefs_array
+            media_and_links[list_item.to_html.to_s.gsub(/[\n]*/,'')] = hrefs_array
         end
     else # If it's print
         current_list.css('li').each do |list_item|
@@ -64,13 +64,8 @@ def hash_lists_media_press(type, current_list)
                 if href_exists != nil
                     href_exists.each {|href| hrefs_array.push ("https://web.cse.ohio-state.edu/~davis.1719/" + href["href"])} # Add's all href's to array
                 end
+                media_and_links[list_item.to_html.to_s.gsub(/[\n]*/,'')] = hrefs_array
                 
-                # Strip Print from the item text
-                if category.include? "Print"
-                    media_and_links[list_item.text.gsub(/Print:[\n]*/,'')] = hrefs_array
-                else
-                    media_and_links[list_item.text.gsub(/[\|\n]*/,'')] = hrefs_array
-                end
             end
         end
     end
@@ -123,7 +118,7 @@ def publication_page (page)
 
         # Organize the array such that the last element is always an array of links
         # Key of hash is title 
-        publish_information[info[0]] = info[1..].concat [href_links]
+        publish_information[info[0]] = info[1..-1].concat [href_links]
     end
 
      # Saves as json 
@@ -157,5 +152,5 @@ agent = Mechanize.new
 main_page = agent.get("https://web.cse.ohio-state.edu/~davis.1719/")
 
 # Caches all media and press
-returned = media_press_cache main_page
-publication_page main_page
+media_press_cache main_page
+#publication_page main_page

@@ -1,0 +1,35 @@
+<%
+require 'json'
+media_press_data = JSON.parse File.read("#{File.dirname(__FILE__)}/media_and_press.json")
+tv_vid = media_press_data["TV/Video"]
+radio = media_press_data["Radio"]
+print_media = media_press_data["Print"]
+current_page.data.title = "Media and Press"
+%>
+
+<h2 class="section-name"> TV/Video </h2>
+<div class="grid">
+<% tv_vid.each_key do |article_html| %>
+    <%= partial "../partials/_media_press_content",
+        :locals => { :article_html => article_html,
+                        :links => tv_vid[article_html]} %> 
+<%end%>
+</div>
+<hr/>
+<h2 class="section-name"> Radio </h2>
+<div class="grid">
+<% radio.each_key do |article_html| %>
+    <%= partial "../partials/_media_press_content",
+        :locals => { :article_html => article_html,
+                        :links => radio[article_html]} %> 
+<%end%>
+</div>
+<hr/>
+<h2 class="section-name"> Print </h2>
+<div class="grid">
+<% print_media.each_key do |article_html| %>
+    <%= partial "../partials/_media_press_content",
+        :locals => { :article_html => article_html,
+                        :links => print_media[article_html]} %> 
+<%end%>
+</div>
