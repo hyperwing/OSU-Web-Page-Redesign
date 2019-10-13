@@ -1,0 +1,120 @@
+body {
+  background-color: #666666;
+  color: #333;
+
+  font:"garamond";
+  padding: 18vh 1rem;
+  text-align: center;
+  height: 100%;
+}
+
+
+.left {
+width: 15%;
+height: 100%;
+float: left;
+background-color: #8F1001;
+border-collapse: collapse;
+}
+
+.middle {
+width: 70%;
+height: 100%;
+float: left;
+border-collapse: collapse;
+}
+
+.right {
+width: 15%;
+height: 100%;
+position: relative;
+float: right;
+background-color: #8F1001;
+border-collapse: collapse;
+}
+
+
+#cf {
+position:relative;
+height:400px;
+left:30%;
+margin:auto;
+animation-name: imageAnimation;
+animation-duration: 2s;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  transition: opacity 3s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+#side-image{
+animation-name: imageAnimation;
+animation-duration: 2s;
+}
+
+
+h1{
+  font-size: 100px;  
+  opacity: 1;
+  animation-name: titleAnimation;
+  animation-duration: 2s;
+}
+
+h2{
+font-size: 50px;  
+opacity: 1;
+animation-name: subAnimation;
+animation-duration: 1.7s;
+animation-delay: .3s; 
+animation-fill-mode: both;
+}
+
+h3{
+font-size: 27px;
+color: white;  
+opacity: 1;
+animation-name: subAnimation;
+animation-duration: 2s;
+animation-delay: .3s; 
+animation-fill-mode: both;
+}
+
+@keyframes titleAnimation {
+0% {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+@keyframes imageAnimation {
+0% {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+@keyframes subAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}

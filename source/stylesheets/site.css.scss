@@ -12,11 +12,12 @@ body {
 a {
   color: rgba(#000, 0.7);
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+    font:"garamond";
+    padding: 18vh 1rem;
+    text-align: center;
+    height: 100%;
 }
+  
 
 .middleman-logo {
   margin-bottom: 1rem;
@@ -27,3 +28,4 @@ a {
 @import 'page_navbar';
 @import 'publications';
 @import 'page_footer';
+@import 'about_me';
