@@ -11,7 +11,7 @@
     <p>
     <%count = 0%>
     <%links.each do |link|%>
-        <%="<a href=#{link}>#{article_link_types[count]}</a>"%>
+        <%="<a class=\"media-press-link\" href=#{link}>#{article_link_types[count]}</a>"%>
         <%count += 1%>
     <%end%>
     </p>

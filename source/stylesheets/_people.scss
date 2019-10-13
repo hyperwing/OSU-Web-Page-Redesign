@@ -1,0 +1,28 @@
+.person-container {
+    $width: 500px;
+    $height: 200px;
+    div.picture {
+        display: table-cell;
+        width: $height;
+        height: $height;
+        img {
+            padding: 25px 10px 0 0;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    div.text-container {
+        padding: 25px 0 0 0;
+        display: table-cell;
+        vertical-align: top;
+        width: ($width - $height);
+        height: $height;
+        text-align: left;
+    }
+    width: $width;
+    height: $height;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: green;
+    margin: 0px 25px 10px 0px;
+}
