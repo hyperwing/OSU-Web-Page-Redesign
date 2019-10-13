@@ -1,28 +1,31 @@
-.person-container {
-    $width: 500px;
-    $height: 200px;
-    div.picture {
-        display: table-cell;
-        width: $height;
-        height: $height;
-        img {
-            padding: 25px 10px 0 0;
-            width: 150px;
-            height: 150px;
-        }
+.buttons {
+    padding: 0 0 47px 40px;
+    .tablink {
+        background-color: #333;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
     }
-    div.text-container {
-        padding: 25px 0 0 0;
-        display: table-cell;
-        vertical-align: top;
-        width: ($width - $height);
-        height: $height;
-        text-align: left;
-    }
-    width: $width;
-    height: $height;
-    display: inline-block;
-    border-radius: 25px;
-    background-color: green;
-    margin: 0px 25px 10px 0px;
-}
+}    
+  
+  .tablink:hover {
+    background-color: #111;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    margin: 0 40px;
+    width: 90%;  
+    border-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+  }
+@import 'people_container';
