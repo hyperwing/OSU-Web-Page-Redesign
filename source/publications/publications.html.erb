@@ -1,0 +1,84 @@
+<%# File created 10/10/2019 by Sri Ramya Dandu
+    Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON
+    Edited 10/12/2019 by Neel Mansukhani: Added page title and navbar
+    Edited 10/13/2019 by Sri Ramya Dandu: Made it compatible with the layout
+%>
+<%# HTML format for publication page. %>
+
+<% 
+require 'json'
+html_dir = File.dirname(__FILE__)
+publications_hash = JSON.parse(File.read("#{html_dir}/publications.json"))
+
+dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2015", "SEP 2014", "AUG 2014",
+"JUN 2014", "2013", "NOV 2012","NOV 2012", "2012", "2011","2011", "JUN 2011", "JUN 2011",
+"JAN 2011", "NOV 2010", "NOV 2010","NOV 2010","NOV 2010","AUG 2010","AUG 2010", "2010",
+"OCT 2009", 'JUL 2009', 'FEB 2009', 'DEC 2008','SEP 2008', 'JUN 2008', 'JUN 2008','JAN 2008',
+'JAN 2008', 'JAN 2008', 'OCT 2007', 'JUN 2007', 'JUN 2007', '2007','2007', 'FEB 2007','FEB 2007',
+'FEB 2007', '2007', '2007', 'OCT 2006', 'OCT 2006', '2006', 'JUN 2006', 'JUN 2006', 'MAY 2006', '2006',
+'SEP 2005', 'SEP 2005', 'JUN 2005', 'JAN 2005', '2004', 'AUG 2004', 'JUL 2004', 'JUL 2004', 'JUN 2004',
+'2004','2003', 'OCT 2003', 'JUL 2003', 'DEC 2002', '2002', 'AUG 2002', 'JUL 2002', '2001', 'NOV 2001',
+'OCT 2001', 'JUL 2001', 'JUN 2001', '2000','DEC 2000', 'JUN 2000', 'NOV 2000','1999', 'MAY 1999', 'SEP 1999',
+'MAR 1999', '1998', 'NOV 1998', 'APR 1998', 'MAR 1998', 'OCT 1997', 'JUN 1997', 'JUN 1997','1997', '1996',
+'AUG 1996', '1994', '1994', 'OCT 1994']
+current_page.data.title = "Publications"
+
+%>
+
+<div class = "publications-page">
+  <h1 class = "title"> Publications </h1>
+  <h2> Jim Davis <h2>
+  <hr>
+  
+  <div class = "timeline">
+  <% count = 0 %>
+  <% direction = "right" %> 
+  <% publications_hash.each do |title, info| %>
+    <article>
+    <%# location of article on page %>
+    <% if count % 2 == 0 
+          direction = "right"
+        else 
+          direction = "left"
+        end %>
+      <div class = <%= direction %> >
+      <div class="date">
+
+      <%# handles both formats of date %>
+      <% if dates[count].split(" ").length == 2 %>
+        <span class="month"> <%= dates[count].split(" ").first %> </span>
+        <span class="year"><%=  dates[count].split(" ").last %></span>
+      <% else %> 
+        <span class="only_year"> <%= dates[count].split(" ").first %> </span>
+      <%end %>
+      </div>
+      <h2> <%= title %> </h2>
+      <p>  Authors: <i> <%=info[0]%> </i></br></br>
+      <i><%=info[1]%></i></br>
+
+      <%# Prints any info regarding the article that is not being printed already%>
+      <% info.each_index do |i| 
+        if i > 1 && i != info.length-1  %>
+          <%= info[i] %> 
+          </br>
+        <% end %>
+      <%end%>
+
+      <%# prints all links as buttons %>
+      <% count_href = info.last.length 
+        while count_href > 0 %>
+          </br>
+          <button class = "button" onclick="location.href= '<%=info.last[info.last.length - count_href]%>'" type="button">Read More</button>
+          </br>
+          <% count_href -= 1 
+        end %>   
+      </p>
+      </div>
+      </article>
+      <%count += 1 %>
+    <%end %>
+
+    </br>
+    
+  </div>
+</div>

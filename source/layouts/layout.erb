@@ -1,3 +1,6 @@
+<%# Edited 10/12/2019 by Sri Ramya Dandu: Moved Neel's layout into here and fixed stylesheet 
+    Edited 10/12/2019 by Sri Ramya Dandu: Added the footer %>
+
 <!doctype html>
 <html>
   <head>
@@ -8,9 +11,19 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+  
+    <div id= "page-layout">
+    <% html_dir = File.dirname(__FILE__)%>
+    <%= partial "#{html_dir}/navbar" %>
+
+      <div id= "content-layout">
+  
+      <%= yield %>
+      </div>
+      <%= partial "#{html_dir}/footer" %>
+
+    </div>
   </body>
 </html>

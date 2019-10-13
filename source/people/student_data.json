@@ -1,0 +1,147 @@
+{
+  "alumni": {
+    "Chris Menart": {
+      "title": " M.S. student"
+    },
+    "Debanjan Nandi": {
+      "title": " M.S. student"
+    },
+    "Mo Akbar": {
+      "title": " B.S./M.S. student"
+    },
+    "Josh Sandvick": {
+      "title": " B.S/M.S. student"
+    },
+    "Brett Whitford": {
+      "title": " B.S. student"
+    },
+    "Chuhan Feng": {
+      "title": " B.S. student"
+    },
+    "Rohith Savaram": {
+      "title": " M.S. Student",
+      "description": "M.S. project, May 2016",
+      "current_job": "Now at Expedia"
+    },
+    "Dan Marchese": {
+      "title": " B.S. Student",
+      "description": "Undergraduate Honors Thesis: \"A Framework for Using Custom Features to Colorize Grayscale Images\", May 2016",
+      "current_job": "Now at Amazon"
+    },
+    "Manjari Akella": {
+      "title": " M.S. Student",
+      "description": "M.S. Project, May 2015",
+      "current_job": "Now at IBM"
+    },
+    "Jeremy Ledonne": {
+      "title": " B.S. Student",
+      "description": "Undergraduate research assistant. Graduated 2015."
+    },
+    "Daniya Zamalieva": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Transformational Models for Background Subtraction with Moving Cameras\", September 2014",
+      "current_job": "Now at Google"
+    },
+    "Ryan Niemocienski": {
+      "title": " B.S. Student",
+      "description": "Undergraduate research assistant, 2013-2014"
+    },
+    "Kyle Salberg": {
+      "title": " B.S. Student",
+      "description": "Undergraduate research assistant. Graduated June 2012.",
+      "current_job": "Now at Garmin"
+    },
+    "Michael Schoenberg": {
+      "title": " B.S. Student",
+      "description": "Undergraduate research assistant. Graduated June 2012.",
+      "current_job": "Now at Microsoft"
+    },
+    "Ronak Buch": {
+      "title": " B.S. Student",
+      "description": "Undergraduate research assistant. Graduated June 2012.",
+      "current_job": "Now at UIUC"
+    },
+    "Kevin Streib": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Improved Graph-based Clustering with Applications in Computer Vision and Behavior Analysis\", March 2012.",
+      "current_job": "Post-Doc with Davis"
+    },
+    "Karthik Sankaranarayanan": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Multiple Instance Learning for Localization and Tracking of Persistent Targets\", August 2011",
+      "current_job": "Now at IBM India"
+    },
+    "Ryan Feather": {
+      "title": " M.S. Student",
+      "description": "MS Thesis: \"Tracking and Activity Analysis in Wide Area Aerial Surveillance Video\", August 2011."
+    },
+    "Matt Nedrich": {
+      "title": " M.S. Student",
+      "description": "MS Thesis: \"Detecting Behavioral Zones in Local and Global Camera Views\", June 2011.",
+      "current_job": "Now at Intel"
+    },
+    "Mark Keck": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Occlusion Recovery and Reasoning for 3D Surveillance\", August 2009",
+      "current_job": "Now at BAE"
+    },
+    "Karl Salva": {
+      "title": " B.S. Student",
+      "description": "Undergraduate research assistant. Graduated March 2009",
+      "current_job": "Now at Numerica"
+    },
+    "Ambrish Tyagi": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Layered Tracker Switching for Visual Surveillance\", August 2008",
+      "current_job": "Now at STI - Omron Scientific Technologies"
+    },
+    "Vinay Sharma": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Simultaneous Object Detection and Segmentation using Top-down and Bottom-up Processing\", November 2007.",
+      "current_job": "Now at Texas Instruments"
+    },
+    "Hui Gao": {
+      "title": " Ph.D. Student",
+      "description": "Ph.D. Thesis: \"Extracting Key Features for Analysis and Recognition in Computer Vision\", February 2006.",
+      "current_job": "Now at Microsoft"
+    },
+    "Alex Morison": {
+      "title": " M.S. Student",
+      "description": "MS Thesis: \"An Adaptive Focus-of-Attention Model for Video Surveillance and Monitoring\", August 2006",
+      "current_job": "Now at OSU/AFRL"
+    },
+    "Vignesh Kannappan": {
+      "title": " M.S. Student",
+      "description": "MS Thesis: \"Automatic Temporal Segmentation of Human Actions\", June 2003.",
+      "current_job": "Now at Microsoft"
+    },
+    "Stephanie Taylor": {
+      "title": " M.S. Student",
+      "description": "MS Thesis: \"Computer Analysis and Recognition of Walking Movements\", June 2002."
+    },
+    "Robin Tan": {
+      "title": " B.S. Student",
+      "description": "Undergraduate Honors Thesis: \"Human-Content Video Coding\", March 2002."
+    }
+  },
+  "current_students": {
+    "Joe Barker": {
+      "title": " Ph.D. student"
+    },
+    "Tong Liang": {
+      "title": " Ph.D. student"
+    },
+    "Ash Radhakrishnan": {
+      "title": " M.S. student"
+    },
+    "Sam Lerner": {
+      "title": " B.S./M.S. student"
+    },
+    "Jamie Cunningham": {
+      "title": " B.S./M.S. student"
+    },
+    "James Enouen": {
+      "title": " B.S. student"
+    }
+  }
+}
