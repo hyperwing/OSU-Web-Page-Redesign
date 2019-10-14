@@ -6,20 +6,28 @@
 
 @import 'partials/site';
 
+
+  body{
+    height:100%;
+    min-height:100%;
+    padding-bottom: 200px;
+  }
+
 .about-me{
   .left {
   width: 20%;
   height: 100%;
   float: left;
   background-color: #8F1001;
-  border-collapse: collapse;
+  padding-bottom: 200px;
+
   }
 
   .middle {
-  width: 60%;
-  height: 100%;
-  float: left;
-  border-collapse: collapse;
+    width: 60%;
+    height: 100%;
+    float: left;
+    margin-bottom: 200px;
   }
 
   .right {
@@ -28,7 +36,8 @@
   position: relative;
   float: right;
   background-color: #8F1001;
-  border-collapse: collapse;
+  padding-bottom: 30%;
+
   }
 
 
@@ -61,13 +70,60 @@
   h1{
     font-size: 100px;  
     opacity: 1;
-    animation-name: titleAnimation;
+    margin-left: 10%;
+    margin-right:10%;
+    animation-name: subAnimation; 
     animation-duration: 2s;
   }
 
   h2{
-  font-size: 50px;  
-  opacity: 1;
+    font-size: 50px;  
+    opacity: 1;
+    margin-left: 10%;
+    margin-right:10%;
+    animation-name: subAnimation;
+    animation-duration: 2s;
+    animation-delay: .2s;
   }
+
+  h3{
+    margin-left: 10%;
+    margin-right:10%;
+    animation-name:subAnimation;
+    animation-duration: 2s;
+    animation-delay: .2s;
+  }
+  h4{
+    opacity:0;
+  }
+
+  // Animation with speed for images.
+  @keyframes imageAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-name: subAnimation;
+    animation-duration: 2s;
+    animation-delay: .3s; 
+    animation-fill-mode: both;
+    }
+  }
+
+  // Animation with speed for subtitles
+  @keyframes subAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 
 }

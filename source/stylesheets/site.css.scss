@@ -1,8 +1,16 @@
 // Created 10/10/2019 by Middleman
 /* Edited 10/12/2019 by Sri Ramya Dandu: add the partials */
+// edited 10/13/2019 by David Wing
+
 /* Main CSS for the website */
+
+.primary_colors{
+  color: #666666;
+  background-color:#8F1001
+}
+
 body {
-  background-color: rgb(176,183,188);
+  background-color:  rgb(176,183,188);
   font-family: Garamond;
   text-align: center;
   height: 100%;
@@ -24,8 +32,8 @@ a {
   
 @import 'people.css.scss';
 @import 'media_and_press.css.scss';
-@import 'partials/_page_navbar.scss';
+@import 'partials/page_navbar';
 @import 'publications.css.scss';
-@import 'media_and_press.css.scss';
-@import 'partials/_page_footer.scss';
+@import 'partials/page_footer';
 @import 'about_me.css.scss';
+
