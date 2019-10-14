@@ -1,8 +1,12 @@
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* Edited 10/10/2019 by Sri Ramya Dandu */
+/* CSS for Publications Page */
+
+/* Created 10/10/2019 by Sri Ramya Dandu */
+/* CSS for Publication Page */
 /* Font and background */
-
-
 .publications-page .title, h2{
-  color: rgb(206,15,61);
+  color: #8F1001 ;
   font-size: 80px;
   text-align: center;
   position: relative;
@@ -11,13 +15,14 @@
   
 .publications-page h2 {
   font-size: 20px;
-  color: rgb(96,96,96);
+  color:#333;
   margin-top:0 ;
 }
-  
-.publications-page hr {
-  border: 1px solid rgb(206,15,61);
-  border-width: 2px;
+
+.publications-page #research {
+  font-size: 15px;
+  color:#333;
+  margin-top:5px;
 }
   
 /* set up of vertical line */
@@ -28,7 +33,9 @@
   width: 2px;
   /* Stops at the last date */
   height: 99%;
-  background: rgb(206,15,61);
+  box-shadow:6px 6px 15px 0 rgba(0, 0, 0, 0.2);
+  background: #8F1001;
+
 }
   
 .publications-page .timeline {
@@ -72,12 +79,11 @@ div.date {
   left: 50%;
   margin: 0 0 0 -32px;
   border-radius: 100%;
-  background: rgb(176,183,188);
-  color: rgb(206,15,61);
-  border: 2px solid rgb(176,183,188);
-  box-shadow: 0 0 0 7px rgb(206,15,61);
+  background:  rgb(176,183,188);
+  color: #8F1001;
+  border: 2px solid  rgb(176,183,188);
+  box-shadow: 0 0 0 7px  #8F1001, 6px 6px 15px 0 rgba(0, 0, 0, 0.2), 6px 6px 15px 0 rgba(0, 0, 0, 0.19);
   font-weight: 900;
-  display:inline;
   text-align: center;
       
 span.month {
@@ -93,14 +99,19 @@ span.only_year {
 }
 }
 
-h2{
+.publication-card {
+  border-radius: 6px;
+  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 6px 6px 21px 0 rgba(0, 0, 0, 0.19);
+}
+.publication-card h2{
   font-size: 15px;
   padding: 10px;
-  color: rgb(176,183,188);
-  background-color:rgb(206,15,61) ;
+  color: #ffffff;
+  background-color: #8F1001;
   border-radius: 6px 6px 0 0;
 }
 
+/* triangles for the cards */
   div.left h2::after{
   content: " ";
   position: absolute;
@@ -108,7 +119,7 @@ h2{
   right: -10px;
   border: solid;
   border-width: 8px 2px 8px 8px;
-  border-color: transparent transparent transparent rgb(206,15,61) ;
+  border-color: transparent transparent transparent #8F1001;
 }
 
   div.right h2::after{
@@ -118,25 +129,24 @@ h2{
   left: -10px;
   border: solid;
   border-width: 8px 8px 8px 2px;
-  border-color: transparent rgb(206,15,61)  transparent transparent;
+  border-color: transparent #8F1001 transparent transparent;
 }
 
-p{
+.publication-card p{
   font-size: 15px;
   padding: 20px;
   margin: 0;
-  color: rgb(96,96,96);
-  background-color: rgb(176,183,188);
+  color: #333;
+  background-color:white;
   border-radius: 0 0 6px 6px;
   border:solid;
-  border-color: rgb(206,15,61);
+  border-color:  #8F1001;
   text-align: left;
   position:relative;
 }
 
 .button {
   float: right;
-  font-family: Garamond;
   font-size: 13px;
   padding: 20px,15px;
   border-radius: 15px;
@@ -145,14 +155,14 @@ p{
   outline: none;
   border: none;
   border-radius: 15px;
-  color: rgb(96,96,96);
-  box-shadow: 0 0 0 2px rgb(206,15,61);
+  color:#333;
+  box-shadow: 0 0 0 2px  #8F1001;
 }
 
 .button:hover {background-color: rgb(176,183,188)}
 
 .button:active {
-  background-color: rgb(176,183,188);
+  background-color: #666666;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }  

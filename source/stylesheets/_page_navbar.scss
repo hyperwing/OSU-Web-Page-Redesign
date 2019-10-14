@@ -1,10 +1,18 @@
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* Edited 10/11/2019 by Neel Mansukhani */
+/* Edited 10/12/2019 by Sri Ramya Dandu */
+/* CSS for navbar */
+
+/* Created 10/11/2019 by Neel Mansukhani */
+/* Edited 10/12/2019 by Sri Ramya Dandu: Changed z-index and color */
+/* CSS for footer */
 .navbar {
     ul {
-        position: relatice;
+        position: fixed;
         top: 0;
         width: 100%;
         list-style-type: none;
-        margin-top: -100px;
+        margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #333;
@@ -29,6 +37,6 @@
     }
     
     .active {
-        background-color: rgb(206,15,61);
+        background-color:#8F1001;
     }
 }

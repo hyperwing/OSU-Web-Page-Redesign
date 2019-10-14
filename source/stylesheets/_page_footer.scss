@@ -1,3 +1,8 @@
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* CSS for footer */
+
+/* Created 10/12/2019 by Sri Ramya Dandu */
+/* CSS for footer */
 #page-layout{
 position: relative;
 min-height: 100vh;
@@ -5,7 +10,6 @@ min-height: 100vh;
 
 #content-layout {
 padding-bottom: 0px; 
-padding-top: 0px; /* Footer height */
 }
 
 
@@ -27,9 +31,25 @@ position:relative;
     color: rgb(176,183,188);
 }
 
-.footer h3{
+#footer h3{
 text-align: center;
 }
+
+/* unvisited link */
+#footer a:link {
+    color:rgb(176,183,188);
+  }
+  
+  /* visited link */
+#footer a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+#footer a:hover {
+    color: white;
+  }
+  
 .osu_info,  .contact_info{
     text-align: center;
     font-size: 13px;
@@ -48,19 +68,19 @@ text-align: center;
 }
 
 .osu_info_detail{
-text-align: left;
+text-align: center;
 float: left;
 margin-left: 20px;
 }
 
 .left_contact{
-text-align: left;
+    text-align: center;
 float: left;
 margin-right: 25px;
 }
 
 .right_contact{
-text-align: left;
+text-align: center;
     float: right;
 }
 

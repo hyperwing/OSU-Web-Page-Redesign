@@ -1,7 +1,10 @@
+// Created 10/10/2019 by Middleman
+/* Edited 10/12/2019 by Sri Ramya Dandu: add the partials */
+/* Main CSS for the website */
+// TODO: add variables for color and other stuff.
 body {
-  background-color: rgb(176,183,188);
+  background-color:  rgb(176,183,188);
   font-family: Garamond;
- 
   text-align: center;
   height: 100%;
   margin: 0;
@@ -21,7 +24,9 @@ a {
 }
   
 @import 'people';
+@import 'media_and_press';
 @import 'page_navbar';
 @import 'publications';
 @import 'page_footer';
 @import 'about_me';
+

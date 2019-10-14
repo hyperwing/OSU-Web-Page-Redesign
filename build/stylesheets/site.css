@@ -1,37 +1,385 @@
+/* Edited 10/12/2019 by Sri Ramya Dandu: add the partials */
+/* Main CSS for the website */
 body {
-  background-color: #666666;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  background-color: #b0b7bc;
+  font-family: Garamond;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 100px 0;
+  font-weight: bold;
+  height: 100%; }
+
+a {
+  color: rgba(0, 0, 0, 0.7);
+  font: "garamond";
   padding: 18vh 1rem;
   text-align: center;
   height: 100%; }
 
-.leftpane {
+.buttons {
+  padding: 0 0 47px 40px; }
+  .buttons .tablink {
+    background-color: #333;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%; }
+
+.tablink:hover {
+  background-color: #111; }
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  margin: 0 40px;
+  width: 90%;
+  border-color: #333;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 100px 20px;
+  height: 100%; }
+
+.person-container {
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #ce0f3d;
+  margin: 0px 25px 10px 0px; }
+  .person-container div.picture {
+    display: table-cell;
+    width: 200px;
+    height: 200px; }
+    .person-container div.picture img {
+      padding: 25px 10px 0 0;
+      width: 150px;
+      height: 150px; }
+  .person-container div.text-container {
+    padding: 25px 0 0 0;
+    display: table-cell;
+    vertical-align: top;
+    width: 300px;
+    height: 200px;
+    text-align: left; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: auto;
+  grid-gap: 30px; }
+
+/*Intended for title of the section (radio, print, etc)*/
+h2.section-name {
+  font-size: 30;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline; }
+
+article.article-item {
+  display: block; }
+
+section.article-src {
+  font-size: 12;
+  font-weight: normal;
+  text-align: left; }
+
+.media-press-item {
+  font-size: 18;
+  font-weight: bold; }
+
+a {
+  font-size: 10;
+  font-weight: normal; }
+
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* Edited 10/11/2019 by Neel Mansukhani */
+/* Edited 10/12/2019 by Sri Ramya Dandu */
+/* CSS for navbar */
+/* Created 10/11/2019 by Neel Mansukhani */
+/* Edited 10/12/2019 by Sri Ramya Dandu: Changed z-index and color */
+/* CSS for footer */
+.navbar ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1; }
+
+.navbar li {
+  float: left; }
+
+.navbar li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: text-bottom;
+  padding: 30px 16px;
+  text-decoration: none; }
+
+.navbar li a:hover:not(.active) {
+  background-color: #111; }
+
+.navbar .active {
+  background-color: #ce0f3d; }
+
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* Edited 10/10/2019 by Sri Ramya Dandu */
+/* CSS for Publications Page */
+/* Created 10/10/2019 by Sri Ramya Dandu */
+/* CSS for Publication Page */
+/* Font and background */
+.publications-page .title, h2 {
+  color: #ce0f3d;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0; }
+
+.publications-page h2 {
+  font-size: 20px;
+  color: #606060;
+  margin-top: 0; }
+
+.publications-page hr {
+  border: 1px solid #ce0f3d;
+  border-width: 2px; }
+
+/* set up of vertical line */
+.publications-page .timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  /* Stops at the last date */
+  height: 99%;
+  background: #ce0f3d; }
+
+.publications-page .timeline {
+  /* distance of boxes from timeline */
+  width: 60%;
+  /* start postion in the screen */
+  margin: 70px auto;
+  position: relative;
+  /* each independent publication formatting */ }
+  .publications-page .timeline article:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .publications-page .timeline article {
+    width: 100%;
+    margin: 0 0 80px 0;
+    position: relative;
+    /* designs the appearance of the date */
+    /* triangles for the cards */ }
+    .publications-page .timeline article div.left, .publications-page .timeline article div.right {
+      width: 40%;
+      float: left;
+      margin: 5px 0 0 0;
+      border-radius: 6px; }
+    .publications-page .timeline article div.right {
+      float: right; }
+    .publications-page .timeline article div.date {
+      /* creates circle */
+      width: 60px;
+      height: 50px;
+      padding: 5px 0;
+      position: absolute;
+      left: 50%;
+      margin: 0 0 0 -32px;
+      border-radius: 100%;
+      background: #b0b7bc;
+      color: #ce0f3d;
+      border: 2px solid #b0b7bc;
+      -webkit-box-shadow: 0 0 0 7px #ce0f3d;
+              box-shadow: 0 0 0 7px #ce0f3d;
+      font-weight: 900;
+      display: inline;
+      text-align: center; }
+      .publications-page .timeline article div.date span.month {
+        font-size: 19px; }
+      .publications-page .timeline article div.date span.year {
+        font-size: 15px; }
+      .publications-page .timeline article div.date span.only_year {
+        font-size: 22px; }
+    .publications-page .timeline article h2 {
+      font-size: 15px;
+      padding: 10px;
+      color: #b0b7bc;
+      background-color: #ce0f3d;
+      border-radius: 6px 6px 0 0; }
+    .publications-page .timeline article div.left h2::after {
+      content: " ";
+      position: absolute;
+      top: 20px;
+      right: -10px;
+      border: solid;
+      border-width: 8px 2px 8px 8px;
+      border-color: transparent transparent transparent #ce0f3d; }
+    .publications-page .timeline article div.right h2::after {
+      content: " ";
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      border: solid;
+      border-width: 8px 8px 8px 2px;
+      border-color: transparent #ce0f3d transparent transparent; }
+    .publications-page .timeline article p {
+      font-size: 15px;
+      padding: 20px;
+      margin: 0;
+      color: #606060;
+      background-color: #b0b7bc;
+      border-radius: 0 0 6px 6px;
+      border: solid;
+      border-color: #ce0f3d;
+      text-align: left;
+      position: relative; }
+    .publications-page .timeline article .button {
+      float: right;
+      font-family: Garamond;
+      font-size: 13px;
+      padding: 20px,15px;
+      border-radius: 15px;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      border-radius: 15px;
+      color: #606060;
+      -webkit-box-shadow: 0 0 0 2px #ce0f3d;
+              box-shadow: 0 0 0 2px #ce0f3d; }
+    .publications-page .timeline article .button:hover {
+      background-color: #b0b7bc; }
+    .publications-page .timeline article .button:active {
+      background-color: #b0b7bc;
+      -webkit-box-shadow: 0 5px #666;
+              box-shadow: 0 5px #666;
+      -webkit-transform: translateY(4px);
+              transform: translateY(4px); }
+
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* CSS for footer */
+/* Created 10/12/2019 by Sri Ramya Dandu */
+/* CSS for footer */
+#page-layout {
+  position: relative;
+  min-height: 100vh; }
+
+#content-layout {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  /* Footer height */ }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: -100px;
+  height: 0px; }
+
+.footer_info {
+  position: relative;
+  width: auto;
+  height: 130px;
+  background-color: #333;
+  overflow: auto;
+  overflow-y: hidden;
+  display: flex;
+  color: #b0b7bc; }
+
+.footer h3 {
+  text-align: center; }
+
+.osu_info, .contact_info {
+  text-align: center;
+  font-size: 13px;
+  line-height: 2px;
+  float: left;
+  top: 10px;
+  position: relative;
+  left: 345px; }
+
+.contact_info {
+  float: left;
+  text-align: center;
+  margin-left: 0px;
+  left: 555px; }
+
+.osu_info_detail {
+  text-align: left;
+  float: left;
+  margin-left: 20px; }
+
+.left_contact {
+  text-align: left;
+  float: left;
+  margin-right: 25px; }
+
+.right_contact {
+  text-align: left;
+  float: right; }
+
+.osu_img {
+  width: 110px;
+  height: 110px;
+  top: 10px;
+  /* Position element */
+  left: 10px;
+  /* Position element */
+  bottom: 10px;
+  position: absolute; }
+
+body {
+  background-color: #666666;
+  color: #333;
+  font: "garamond";
+  padding: 18vh 1rem;
+  text-align: center;
+  height: 100%; }
+
+.left {
   width: 15%;
   height: 100%;
   float: left;
-  background-color: #BB0000;
+  background-color: #8F1001;
   border-collapse: collapse; }
 
-.middlepane {
+.middle {
   width: 70%;
   height: 100%;
   float: left;
   border-collapse: collapse; }
 
-.rightpane {
+.right {
   width: 15%;
   height: 100%;
   position: relative;
   float: right;
-  background-color: #BB0000;
+  background-color: #8F1001;
   border-collapse: collapse; }
 
 #cf {
   position: relative;
-  height: 200px;
-  left: 35%;
-  margin: auto; }
+  height: 400px;
+  left: 30%;
+  margin: auto;
+  -webkit-animation-name: imageAnimation;
+          animation-name: imageAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 #cf img {
   position: absolute;
@@ -42,10 +390,14 @@ body {
 #cf img.top:hover {
   opacity: 0; }
 
+#side-image {
+  -webkit-animation-name: imageAnimation;
+          animation-name: imageAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
 h1 {
   font-size: 100px;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
-          clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
   opacity: 1;
   -webkit-animation-name: titleAnimation;
           animation-name: titleAnimation;
@@ -54,8 +406,20 @@ h1 {
 
 h2 {
   font-size: 50px;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
-          clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-animation-name: subAnimation;
+          animation-name: subAnimation;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+h3 {
+  font-size: 27px;
+  color: white;
   opacity: 1;
   -webkit-animation-name: subAnimation;
           animation-name: subAnimation;
@@ -70,54 +434,58 @@ h2 {
   0% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%); }
+    opacity: 0; }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%); } }
+    opacity: 1; } }
 
 @keyframes titleAnimation {
   0% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%); }
+    opacity: 0; }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%); } }
+    opacity: 1; } }
+
+@-webkit-keyframes imageAnimation {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes imageAnimation {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
 
 @-webkit-keyframes subAnimation {
   0% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%); }
+    opacity: 0; }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%); } }
+    opacity: 1; } }
 
 @keyframes subAnimation {
   0% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    opacity: 0;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%); }
+    opacity: 0; }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%); } }
+    opacity: 1; } }
