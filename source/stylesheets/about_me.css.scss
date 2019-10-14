@@ -2,9 +2,11 @@
 // Edited 10/11/2019 by David Wing
 // Edited 10/12/2019 by David Wing
 // Edited 10/13/2019 by David Wing
+// Edited 10/14/2019 by Neel Mansukhani: Rearranged css and moved animations to site partial.
+
+@import 'partials/site';
+
 .about-me{
-
-
   .left {
   width: 20%;
   height: 100%;
@@ -67,35 +69,5 @@
   font-size: 50px;  
   opacity: 1;
   }
-
-
-  // Animation with speed for images.
-  @keyframes imageAnimation {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    animation-name: subAnimation;
-    animation-duration: 2s;
-    animation-delay: .3s; 
-    animation-fill-mode: both;
-    }
-  }
-
-  // Animation with speed for subtitles
-  @keyframes subAnimation {
-    0% {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
 
 }

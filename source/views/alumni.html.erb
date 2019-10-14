@@ -1,15 +1,18 @@
 <%# File Created 10/11/2019 by Neel Mansukhani
-    Edited 10/12/2019 by Neel Mansukhani
+    Edited 10/12/2019 by Neel Mansukhani: Added json data
     Edited 10/13/2019 by Neel Mansukhani: now only has alumni
+    Edited 10/13/2019 by Neel Mansukhani: Added button select and rearranged files.
+    Edited 10/14/2019 by Neel Mansukhani: Added highlight to selected button and rearranged css.
 %>
 
-<%# HTML format for people page. %>
+<%# HTML format for alumni page. %>
 <%
 require 'json'
 html_dir = File.dirname(__FILE__)
 fjson = JSON.parse File.read "#{html_dir}/../data/student_data.json"
 alumni = fjson['alumni']
 current_page.data.title = "People"
+current_page.data.stylesheet = "people"
 %>
 <form class="buttons">
     <button type="submit" class="tablink" formaction="current_students.html">Current Students</button>

@@ -1,5 +1,9 @@
 <%# TODO: Add documentation & comments %>
 <%# TODO: move data to data %>
+<%#
+    Edited 10/13/2019 by Neel Mansukhani: Rearranged files
+    Edited 10/14/2019 by Neel Mansukhani: Rearranged css
+%>
 <%
 require 'json'
 media_press_data = JSON.parse File.read("#{File.dirname(__FILE__)}/../data/media_and_press.json")
@@ -7,6 +11,7 @@ tv_vid = media_press_data["TV/Video"]
 radio = media_press_data["Radio"]
 print_media = media_press_data["Print"]
 current_page.data.title = "Media and Press"
+current_page.data.stylesheet = "media_and_press"
 %>
 
 <h2 class="section-name"> TV/Video </h2>
