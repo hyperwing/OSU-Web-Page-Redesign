@@ -11,6 +11,7 @@
         font-size: 17px;
         width: 25%;
     }
+    #selected {background-color: rgb(206,15,61)}
 }    
   
   .tablink:hover {
@@ -21,11 +22,12 @@
   .tabcontent {
     margin: 0 40px;
     width: 90%;  
-    border-color: #333;
+    border-color: rgb(206,15,61);
     border-style: solid;
     border-width: 2px;
     color: white;
     padding: 100px 20px;
     height: 100%;
+
   }
 @import 'people_container';

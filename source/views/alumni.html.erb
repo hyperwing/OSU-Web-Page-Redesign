@@ -7,17 +7,17 @@
 <%
 require 'json'
 html_dir = File.dirname(__FILE__)
-fjson = JSON.parse File.read "#{html_dir}/../../data/student_data.json"
+fjson = JSON.parse File.read "#{html_dir}/../data/student_data.json"
 alumni = fjson['alumni']
 current_page.data.title = "People"
 %>
 <form class="buttons">
     <button type="submit" class="tablink" formaction="current_students.html">Current Students</button>
-    <button type="submit" class="tablink" formaction="alumni.html">Alumni</button>
+    <button type="submit" id="selected" class="tablink" formaction="alumni.html">Alumni</button>
 </form>
 <div class="tabcontent">
     <% alumni.each_key do |name| %>
-        <%= partial "../partials/people_container",
+        <%= partial "partials/people_container",
                     :locals => {:name => name,
                                 :description => alumni[name]['description'],
                                 :title => alumni[name]['title'],
