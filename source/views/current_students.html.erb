@@ -3,6 +3,7 @@
     Edited 10/13/2019 by Neel Mansukhani: now only has current students
     Edited 10/13/2019 by Neel Mansukhani: Added button select and rearranged files.
     Edited 10/14/2019 by Neel Mansukhani: Added highlight to selected button and rearranged css.
+    Edited 10/14/2019 by Neel Mansukhani: Added pictures.
 %>
 <%# HTML format for current students page. %>
 <%
@@ -23,6 +24,7 @@ current_page.data.stylesheet = "people"
                     :locals => {:name => name,
                                 :description => current_students[name]['description'],
                                 :title => current_students[name]['title'],
-                                :current_job => current_students[name]['current_job']} %>
+                                :current_job => current_students[name]['current_job'],
+                                :img => current_students[name]['img_link']} %>
     <% end %>
 </div>
