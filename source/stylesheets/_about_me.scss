@@ -31,12 +31,12 @@
 
 
   #cf {
-  position:relative;
-  height:400px;
-  left:30%;
-  margin:auto;
-  animation-name: imageAnimation;
-  animation-duration: 2s;
+    position:relative;
+    height:400px;
+    margin-left:10%;
+    margin-right:10%;
+    animation-name: imageAnimation;
+    animation-duration: 2s;
   }
 
   #cf img {
