@@ -30,7 +30,7 @@
   }
 
 
-  #cf {
+  .cf {
     position:relative;
     height:400px;
     margin-left:10%;
@@ -39,18 +39,18 @@
     animation-duration: 2s;
   }
 
-  #cf img {
+  .cf img {
     position:absolute;
     left:0;
     transition: opacity 3s ease-in-out;
   }
 
-  #cf img.top:hover {
+  .cf img.top:hover {
     opacity:0;
   }
 
 
-  #side-image{
+  .side-image{
   animation-name: imageAnimation;
   animation-duration: 2s;
   }
