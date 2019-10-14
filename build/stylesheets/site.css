@@ -67,7 +67,7 @@ a {
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   margin-bottom: -100px;
   height: 0px; }
@@ -319,7 +319,7 @@ h1 {
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   margin-bottom: -100px;
   height: 0px; }
@@ -446,8 +446,8 @@ h1 {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
   grid-template-columns: auto auto auto auto;
-  grid-auto-rows: auto;
-  grid-gap: 3%;
+  grid-auto-rows: auto auto;
+  grid-gap: 1.5%;
   margin: 0% 10% 10% 10%; }
 
 h2.section-name {
@@ -458,15 +458,34 @@ h2.section-name {
           text-decoration-line: underline; }
 
 section.article-src {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   text-align: left;
-  color: #ffffff; }
+  color: #ffffff;
+  -webkit-animation: fadein;
+          animation: fadein; }
 
-div.media-press-item {
+h3.media-press-item {
   font-size: 18px;
   color: #8F1001;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-animation: fadein;
+          animation: fadein; }
+
+a {
+  padding: 0px; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /* CSS for navbar */
 /* Created 10/11/2019 by Neel Mansukhani */
@@ -548,7 +567,7 @@ div.media-press-item {
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   margin-bottom: -100px;
   height: 0px; }
@@ -817,7 +836,7 @@ h1 {
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   margin-bottom: -100px;
   height: 0px; }
@@ -931,7 +950,7 @@ h1 {
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   margin-bottom: -100px;
   height: 0px; }
