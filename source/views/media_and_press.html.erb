@@ -1,6 +1,5 @@
-<%# TODO: Add documentation & comments %>
-<%# TODO: move data to data %>
-<%#
+<%# File created 10/10/2019 by Sharon Qiu
+    Edited 10/12/2019 by Sharon Qiu: Edited html to fit the layour html
     Edited 10/13/2019 by Neel Mansukhani: Rearranged files
     Edited 10/14/2019 by Neel Mansukhani: Rearranged css
 %>
@@ -13,7 +12,6 @@ print_media = media_press_data["Print"]
 current_page.data.title = "Media and Press"
 current_page.data.stylesheet = "media_and_press"
 %>
-
 <h2 class="section-name"> TV/Video </h2>
 <div class="grid">
 <% tv_vid.each_key do |article_html| %>
@@ -40,3 +38,4 @@ current_page.data.stylesheet = "media_and_press"
                         :links => print_media[article_html]} %> 
 <%end%>
 </div>
+<br/>
