@@ -4,7 +4,7 @@
 <%
 require 'json'
 html_dir = File.dirname(__FILE__)
-fjson = JSON.parse File.read "#{html_dir}/../data/student_data.json"
+fjson = JSON.parse File.read "#{html_dir}/../../data/student_data.json"
 current_students = fjson['current_students']
 current_page.data.title = "People"
 %>
@@ -14,7 +14,7 @@ current_page.data.title = "People"
 </form>
 <div class="tabcontent">
     <% current_students.each_key do |name| %>
-        <%= partial "../partials/person",
+        <%= partial "../partials/people_container",
                     :locals => {:name => name,
                                 :description => current_students[name]['description'],
                                 :title => current_students[name]['title'],
