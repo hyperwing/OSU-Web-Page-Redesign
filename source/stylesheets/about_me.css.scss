@@ -2,7 +2,10 @@
 // Edited 10/11/2019 by David Wing
 // Edited 10/12/2019 by David Wing
 // Edited 10/13/2019 by David Wing
-.about-me{
+// Edited 10/14/2019 by Neel Mansukhani: Rearranged css and moved animations to site partial.
+
+@import 'partials/site';
+
 
   body{
     height:100%;
@@ -10,7 +13,7 @@
     padding-bottom: 200px;
   }
 
-
+.about-me{
   .left {
   width: 20%;
   height: 100%;

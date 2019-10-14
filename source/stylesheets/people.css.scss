@@ -1,3 +1,10 @@
+// File Created 10/11/2019 by Neel Mansukhani
+// File Edited 10/13/2019 by Neel Mansukhani: Added tabs
+// Edited 10/14/2019 by Neel Mansukhani: Rearranged css
+
+/* CSS for people page */
+@import 'partials/site';
+@import 'partials/people_container';
 .buttons {
     padding: 0 0 47px 40px;
     .tablink {
@@ -32,4 +39,3 @@
     height: 100%;
 
   }
-@import 'people_container';
