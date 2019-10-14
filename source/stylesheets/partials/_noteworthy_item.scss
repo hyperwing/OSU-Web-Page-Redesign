@@ -1,0 +1,59 @@
+// File Created 10/14/2019 by Neel Mansukhani
+.container {
+    $width: 1000px;
+    $height: 400px;
+    div.picture {
+        display: table-cell;
+        width: $height + 200px;
+        height: $height;
+        img {
+            width: $height + 200px;
+            height: $height;
+        }
+        img.left {
+            border-radius: 25px 0 0 25px;
+            padding: 0 10px 0 0
+        }
+        img.right {
+            border-radius: 0 25px 25px 0;
+            padding: 0;
+        }
+    }
+    div.text-container {
+        position: relative;
+        display: table-cell;
+        vertical-align: top;
+        width: ($width - $height);
+        height: $height;
+        text-align: left;
+        color: white;
+        div.description {
+            padding: 100px 0 0 0;
+            font-size: 24px;
+        }
+
+    }
+    div.left {
+        text-align: right;
+        padding: 25px 10px 0 0;
+        span.date {
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+        }
+    }
+    div.right {
+        text-align: left;
+        padding: 25px 0 0 10px;
+        span.date {
+            position: absolute;
+            bottom: 40px;
+        }
+    }
+    width: $width;
+    height: $height;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: $primary_scarlet;
+    margin: 0px 25px 50px 0px;
+}
