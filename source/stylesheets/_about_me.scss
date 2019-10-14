@@ -59,13 +59,16 @@
   h1{
     font-size: 100px;  
     opacity: 1;
-    animation-name: titleAnimation;
+    animation-name: subAnimation; 
     animation-duration: 2s;
   }
 
   h2{
-  font-size: 50px;  
-  opacity: 1;
+    font-size: 50px;  
+    opacity: 1;
+    animation-name: subAnimation;
+    animation-duration: 2s;
+    animation-delay: .2s;
   }
 
 
