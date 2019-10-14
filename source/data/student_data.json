@@ -33,7 +33,8 @@
     "Manjari Akella": {
       "title": " M.S. Student",
       "description": "M.S. Project, May 2015",
-      "current_job": "Now at IBM"
+      "current_job": "Now at IBM",
+      "img_link": "../../images/people/ibm.png"
     },
     "Jeremy Ledonne": {
       "title": " B.S. Student",
@@ -42,7 +43,8 @@
     "Daniya Zamalieva": {
       "title": " Ph.D. Student",
       "description": "Ph.D. Thesis: \"Transformational Models for Background Subtraction with Moving Cameras\", September 2014",
-      "current_job": "Now at Google"
+      "current_job": "Now at Google",
+      "img_link": "../../images/people/google.png"
     },
     "Ryan Niemocienski": {
       "title": " B.S. Student",
@@ -51,7 +53,8 @@
     "Kyle Salberg": {
       "title": " B.S. Student",
       "description": "Undergraduate research assistant. Graduated June 2012.",
-      "current_job": "Now at Garmin"
+      "current_job": "Now at Garmin",
+      "img_link": "../../images/people/garmin.png"
     },
     "Michael Schoenberg": {
       "title": " B.S. Student",
