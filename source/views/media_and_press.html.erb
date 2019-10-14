@@ -1,16 +1,22 @@
+<%# File created 10/10/2019 by Sharon Qiu
+    Edited 10/12/2019 by Sharon Qiu: Edited html to fit the layour html
+    Edited 10/13/2019 by Neel Mansukhani: Rearranged files
+    Edited 10/14/2019 by Neel Mansukhani: Rearranged css
+%>
 <%
 require 'json'
-media_press_data = JSON.parse File.read("#{File.dirname(__FILE__)}/media_and_press.json")
+media_press_data = JSON.parse File.read("#{File.dirname(__FILE__)}/../data/media_and_press.json")
 tv_vid = media_press_data["TV/Video"]
 radio = media_press_data["Radio"]
 print_media = media_press_data["Print"]
 current_page.data.title = "Media and Press"
+current_page.data.stylesheet = "media_and_press"
 %>
 
 <h2 class="section-name"> TV/Video </h2>
 <div class="grid">
 <% tv_vid.each_key do |article_html| %>
-    <%= partial "../partials/_media_press_content",
+    <%= partial "partials/media_press_content",
         :locals => { :article_html => article_html,
                         :links => tv_vid[article_html]} %> 
 <%end%>
@@ -19,7 +25,7 @@ current_page.data.title = "Media and Press"
 <h2 class="section-name"> Radio </h2>
 <div class="grid">
 <% radio.each_key do |article_html| %>
-    <%= partial "../partials/_media_press_content",
+    <%= partial "partials/media_press_content",
         :locals => { :article_html => article_html,
                         :links => radio[article_html]} %> 
 <%end%>
@@ -28,12 +34,8 @@ current_page.data.title = "Media and Press"
 <h2 class="section-name"> Print </h2>
 <div class="grid">
 <% print_media.each_key do |article_html| %>
-    <%= partial "../partials/_media_press_content",
+    <%= partial "partials/media_press_content",
         :locals => { :article_html => article_html,
                         :links => print_media[article_html]} %> 
 <%end%>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> 6fe386c0f2bb43c379a191de07bfe64f148341b7

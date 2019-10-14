@@ -1,0 +1,73 @@
+// File Created 10/10/2019 by David Wing
+// Edited 10/11/2019 by David Wing
+// Edited 10/12/2019 by David Wing
+// Edited 10/13/2019 by David Wing
+// Edited 10/14/2019 by Neel Mansukhani: Rearranged css and moved animations to site partial.
+
+@import 'partials/site';
+
+.about-me{
+  .left {
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: #8F1001;
+  border-collapse: collapse;
+  }
+
+  .middle {
+  width: 60%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+  }
+
+  .right {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-color: #8F1001;
+  border-collapse: collapse;
+  }
+
+
+  .cf {
+    position:relative;
+    height:400px;
+    margin-left:10%;
+    margin-right:10%;
+    animation-name: imageAnimation;
+    animation-duration: 2s;
+  }
+
+  .cf img {
+    position:absolute;
+    left:0;
+    transition: opacity 3s ease-in-out;
+  }
+
+  .cf img.top:hover {
+    opacity:0;
+  }
+
+
+  .side-image{
+  animation-name: imageAnimation;
+  animation-duration: 2s;
+  }
+
+
+  h1{
+    font-size: 100px;  
+    opacity: 1;
+    animation-name: titleAnimation;
+    animation-duration: 2s;
+  }
+
+  h2{
+  font-size: 50px;  
+  opacity: 1;
+  }
+
+}

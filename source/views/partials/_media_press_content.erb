@@ -1,0 +1,23 @@
+<%# 
+    Edited 10/13/2019 by Neel Mansukhani: Rearranged files
+%>
+<%  get_bold = Regexp.new(/<b.*b>/)
+    get_link_types = Regexp.new(/\[.*\]/)
+    get_article_title = Regexp.new(/\/b>.*?</)
+    article_src = article_html.scan(get_bold)[0].gsub(/<\/?b>/,'')
+    uncleaned_name = article_html.scan(get_article_title).map {|val| val.gsub(/(\/b>|<)/,'')}
+    article_name = uncleaned_name[0].sub(/,\s*/,'')
+    article_link_types = article_html.scan(get_link_types).map {|val| val.gsub(/(\[|\])/,'')}   %>
+
+<div class="article-item">
+    <section class="article-src"><%="#{article_src}"%></section>
+    <div class="media-press-item"><%="#{article_name}"%></div>
+    <p>
+    <%count = 0%>
+    <%links.each do |link|%>
+        <%="<a href=#{links}>#{article_link_types[count]}</a>"%>
+        <%count += 1%>
+    <%end%>
+    </p>
+</div>
+<hr/>

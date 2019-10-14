@@ -1,5 +1,8 @@
-<%# Edited 10/12/2019 by Sri Ramya Dandu: Moved Neel's layout into here and fixed stylesheet 
-    Edited 10/12/2019 by Sri Ramya Dandu: Added the footer %>
+<%# Created 10/10/2019 by Middleman
+    Edited 10/12/2019 by Sri Ramya Dandu: Moved Neel's layout into here and fixed stylesheet 
+    Edited 10/12/2019 by Sri Ramya Dandu: Added the footer
+    Edited 10/14/2019 by Neel Mansukhani: Added current_page.data.stylesheet    
+%>
 
 <!doctype html>
 <html>
@@ -9,8 +12,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag current_page.data.stylesheet %>
   </head>
   <body>
   

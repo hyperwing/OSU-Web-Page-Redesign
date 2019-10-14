@@ -4,10 +4,6 @@
 body {
   background-color: rgb(176,183,188);
   font-family: Garamond;
-<<<<<<< HEAD
- 
-=======
->>>>>>> 6fe386c0f2bb43c379a191de07bfe64f148341b7
   text-align: center;
   height: 100%;
   margin: 0;
@@ -26,10 +22,10 @@ a {
     height: 100%;
 }
   
-@import 'people';
-@import 'media_and_press';
-@import 'page_navbar';
-@import 'publications';
-@import 'media_and_press';
-@import 'page_footer';
-@import 'about_me';
+@import 'people.css.scss';
+@import 'media_and_press.css.scss';
+@import 'partials/_page_navbar.scss';
+@import 'publications.css.scss';
+@import 'media_and_press.css.scss';
+@import 'partials/_page_footer.scss';
+@import 'about_me.css.scss';

@@ -1,23 +1,26 @@
 <%# File Created 10/11/2019 by Neel Mansukhani
-    Edited 10/12/2019 by Neel Mansukhani
+    Edited 10/12/2019 by Neel Mansukhani: Added json data
     Edited 10/13/2019 by Neel Mansukhani: now only has alumni
+    Edited 10/13/2019 by Neel Mansukhani: Added button select and rearranged files.
+    Edited 10/14/2019 by Neel Mansukhani: Added highlight to selected button and rearranged css.
 %>
 
-<%# HTML format for people page. %>
+<%# HTML format for alumni page. %>
 <%
 require 'json'
 html_dir = File.dirname(__FILE__)
-fjson = JSON.parse File.read "#{html_dir}/student_data.json"
+fjson = JSON.parse File.read "#{html_dir}/../data/student_data.json"
 alumni = fjson['alumni']
 current_page.data.title = "People"
+current_page.data.stylesheet = "people"
 %>
 <form class="buttons">
     <button type="submit" class="tablink" formaction="current_students.html">Current Students</button>
-    <button type="submit" class="tablink" formaction="alumni.html">Alumni</button>
+    <button type="submit" id="selected" class="tablink" formaction="alumni.html">Alumni</button>
 </form>
 <div class="tabcontent">
     <% alumni.each_key do |name| %>
-        <%= partial "../partials/person",
+        <%= partial "partials/people_container",
                     :locals => {:name => name,
                                 :description => alumni[name]['description'],
                                 :title => alumni[name]['title'],
