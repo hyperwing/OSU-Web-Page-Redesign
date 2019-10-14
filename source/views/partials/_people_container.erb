@@ -1,15 +1,17 @@
 <%# File Created 10/12/2019 by Neel Mansukhani
-    File Edited 10/13/2019 by Neel Mansukhani: Rearranged files
+    Edited 10/13/2019 by Neel Mansukhani: Rearranged files
+    Edited 10/14/2019 by Neel Mansukhani: Added pictures.
 %>
-
-<div class="person-container">
+<% img = "../../images/osu_logo.jpg" if img.nil? %>
+<div class="person-container image-animation">
     <div class="picture">
-        <img src="../../images/blank-profile.png"/>
+        <img src="<%= img %>"/>
     </div>
     <div class="text-container">
-        <%= "<div>Name: #{name}</div>" if !name.nil?%>
-        <%= "<div>Title: #{title}</div>" if !title.nil?%>
-        <%= "<div>Description: #{description}</div>" if !description.nil?%>
-        <%= "<div>Current Job: #{current_job}</div>" if !current_job.nil?%>
+        <div class="name"><%= name %></div>
+        <div class="title"><%= title %></div>
+        <div class="description"><%= description %></div>
+        <div class="current-job"><%= current_job %></div>
+
     </div>
 </div>

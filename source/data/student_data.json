@@ -21,12 +21,14 @@
     "Rohith Savaram": {
       "title": " M.S. Student",
       "description": "M.S. project, May 2016",
-      "current_job": "Now at Expedia"
+      "current_job": "Now at Expedia",
+      "img_link": "../../images/people/expedia.png"
     },
     "Dan Marchese": {
       "title": " B.S. Student",
       "description": "Undergraduate Honors Thesis: \"A Framework for Using Custom Features to Colorize Grayscale Images\", May 2016",
-      "current_job": "Now at Amazon"
+      "current_job": "Now at Amazon",
+      "img_link": "../../images/people/amazon.png"
     },
     "Manjari Akella": {
       "title": " M.S. Student",
@@ -54,12 +56,14 @@
     "Michael Schoenberg": {
       "title": " B.S. Student",
       "description": "Undergraduate research assistant. Graduated June 2012.",
-      "current_job": "Now at Microsoft"
+      "current_job": "Now at Microsoft",
+      "img_link": "../../images/people/microsoft.jpg"
     },
     "Ronak Buch": {
       "title": " B.S. Student",
       "description": "Undergraduate research assistant. Graduated June 2012.",
-      "current_job": "Now at UIUC"
+      "current_job": "Now at UIUC",
+      "img_link": "../../images/people/uiuc.jpg"
     },
     "Kevin Streib": {
       "title": " Ph.D. Student",
@@ -69,7 +73,8 @@
     "Karthik Sankaranarayanan": {
       "title": " Ph.D. Student",
       "description": "Ph.D. Thesis: \"Multiple Instance Learning for Localization and Tracking of Persistent Targets\", August 2011",
-      "current_job": "Now at IBM India"
+      "current_job": "Now at IBM India",
+      "img_link": "../../images/people/ibm.png"
     },
     "Ryan Feather": {
       "title": " M.S. Student",
@@ -78,32 +83,38 @@
     "Matt Nedrich": {
       "title": " M.S. Student",
       "description": "MS Thesis: \"Detecting Behavioral Zones in Local and Global Camera Views\", June 2011.",
-      "current_job": "Now at Intel"
+      "current_job": "Now at Intel",
+      "img_link": "../../images/people/intel.png"
     },
     "Mark Keck": {
       "title": " Ph.D. Student",
       "description": "Ph.D. Thesis: \"Occlusion Recovery and Reasoning for 3D Surveillance\", August 2009",
-      "current_job": "Now at BAE"
+      "current_job": "Now at BAE",
+      "img_link": "../../images/people/bae.png"
     },
     "Karl Salva": {
       "title": " B.S. Student",
       "description": "Undergraduate research assistant. Graduated March 2009",
-      "current_job": "Now at Numerica"
+      "current_job": "Now at Numerica",
+      "img_link": "../../images/people/numerica.png"
     },
     "Ambrish Tyagi": {
       "title": " Ph.D. Student",
       "description": "Ph.D. Thesis: \"Layered Tracker Switching for Visual Surveillance\", August 2008",
-      "current_job": "Now at STI - Omron Scientific Technologies"
+      "current_job": "Now at STI - Omron Scientific Technologies",
+      "img_link": "../../images/people/sti.png"
     },
     "Vinay Sharma": {
       "title": " Ph.D. Student",
       "description": "Ph.D. Thesis: \"Simultaneous Object Detection and Segmentation using Top-down and Bottom-up Processing\", November 2007.",
-      "current_job": "Now at Texas Instruments"
+      "current_job": "Now at Texas Instruments",
+      "img_link": "../../images/people/ti.png"
     },
     "Hui Gao": {
       "title": " Ph.D. Student",
       "description": "Ph.D. Thesis: \"Extracting Key Features for Analysis and Recognition in Computer Vision\", February 2006.",
-      "current_job": "Now at Microsoft"
+      "current_job": "Now at Microsoft",
+      "img_link": "../../images/people/microsoft.jpg"
     },
     "Alex Morison": {
       "title": " M.S. Student",
@@ -113,7 +124,8 @@
     "Vignesh Kannappan": {
       "title": " M.S. Student",
       "description": "MS Thesis: \"Automatic Temporal Segmentation of Human Actions\", June 2003.",
-      "current_job": "Now at Microsoft"
+      "current_job": "Now at Microsoft",
+      "img_link": "../../images/people/microsoft.jpg"
     },
     "Stephanie Taylor": {
       "title": " M.S. Student",

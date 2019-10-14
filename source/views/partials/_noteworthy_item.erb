@@ -1,0 +1,21 @@
+<%# File Created 10/14/2019 by Neel Mansukhani %>
+<div class="container image-animation">
+    <% if text_right %>
+        <div class="picture">
+            <img class="left" src="../../images/blank-profile.png"/>
+        </div>
+        <div class="text-container right">
+            <div class="description"><%= description %></div>
+            <span class="date"><%= date %></span>
+        </div>
+    <% else %>
+        <div class="text-container left">
+            <div class="description"><%= description %></div>
+            <span class="date"><%= date %></span>
+        </div>    
+        <div class="picture">
+            <img class="right" src="../../images/blank-profile.png">
+        </div>
+
+    <% end %>
+</div>

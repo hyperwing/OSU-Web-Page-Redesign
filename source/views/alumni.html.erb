@@ -3,6 +3,7 @@
     Edited 10/13/2019 by Neel Mansukhani: now only has alumni
     Edited 10/13/2019 by Neel Mansukhani: Added button select and rearranged files.
     Edited 10/14/2019 by Neel Mansukhani: Added highlight to selected button and rearranged css.
+    Edited 10/14/2019 by Neel Mansukhani: Added pictures.
 %>
 
 <%# HTML format for alumni page. %>
@@ -24,6 +25,7 @@ current_page.data.stylesheet = "people"
                     :locals => {:name => name,
                                 :description => alumni[name]['description'],
                                 :title => alumni[name]['title'],
-                                :current_job => alumni[name]['current_job']} %>
+                                :current_job => alumni[name]['current_job'],
+                                :img => alumni[name]['img_link']} %>
     <% end %>
 </div>

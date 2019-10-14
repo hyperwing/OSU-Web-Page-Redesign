@@ -1,0 +1,18 @@
+<%# File Created 10/14/2019 by Neel Mansukhani
+%>
+<%# HTML format for noteworthy page. %>
+<%
+require 'json'
+html_dir = File.dirname(__FILE__)
+noteworthy = JSON.parse File.read "#{html_dir}/../data/noteworthy.json"
+current_page.data.title = "Noteworthy"
+current_page.data.stylesheet = "noteworthy"
+%>
+<% count = 0 %>
+<% noteworthy.each_key do |id|%>
+        <%= partial "partials/noteworthy_item",
+                    :locals => {:description => noteworthy[id]['description'],
+                                :date => noteworthy[id]['date'],
+                                :text_right => count % 2 == 0 } %>
+        <% count += 1 %>                        
+<% end %>
