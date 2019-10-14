@@ -2,6 +2,7 @@
     Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON
     Edited 10/12/2019 by Neel Mansukhani: Added page title and navbar
     Edited 10/12/2019 by Sri Ramya Dandu: Made it compatible with the layout
+    Edited 10/12/2019 by Sri Ramya Dandu: Inlcuded research intro 
 %>
 <%# HTML format for publication page. %>
 
@@ -27,9 +28,11 @@ current_page.data.title = "Publications"
 
 <div class = "publications-page">
   <h1 class = "title"> Publications </h1>
-  <h2> Jim Davis <h2>
-  <hr>
-  
+  <p id = "research"> Jim Davis's main research areas include Computer Vision, Artificial Intelligence, and </br>
+      Machine Learning with a focus on image/video analysis and automated surveillance. He </br>
+      has received over $3M in research funding (to date) from the National Science Foundation </br>
+      (including a prestigious CAREER award),U.S. Air Force, Los Alamos National Lab, U.S. </br>
+      Army Night Vision Laboratory, Intel, and Ohio Board of Regents. </p>
   <div class = "timeline">
   <% count = 0 %>
   <% direction = "right" %> 
@@ -52,28 +55,31 @@ current_page.data.title = "Publications"
         <span class="only_year"> <%= dates[count].split(" ").first %> </span>
       <%end %>
       </div>
-      <h2> <%= title %> </h2>
-      <p>  Authors: <i> <%=info[0]%> </i></br></br>
-      <i><%=info[1]%></i></br>
 
-      <%# Prints any info regarding the article that is not being printed already%>
-      <% info.each_index do |i| 
-        if i > 1 && i != info.length-1  %>
-          <%= info[i] %> 
-          </br>
-        <% end %>
-      <%end%>
+      <div class = "publication-card">
+        <h2> <%= title %> </h2>
+        <p>  Authors: <i> <%=info[0]%> </i></br></br>
+        <i><%=info[1]%></i></br>
 
-      <%# prints all links as buttons %>
-      <% count_href = info.last.length 
-        while count_href > 0 %>
-          </br>
-          <%# move to form instead of onclick %>
-          <button class = "button" onclick="location.href= '<%=info.last[info.last.length - count_href]%>'" type="button">Read More</button>
-          </br>
-          <% count_href -= 1 
-        end %>   
-      </p>
+        <%# Prints any info regarding the article that is not being printed already%>
+        <% info.each_index do |i| 
+          if i > 1 && i != info.length-1  %>
+            <%= info[i] %> 
+            </br>
+          <% end %>
+        <%end%>
+
+        <%# prints all links as buttons %>
+        <% count_href = info.last.length 
+          while count_href > 0 %>
+            </br>
+            <%# move to form instead of onclick %>
+            <button class = "button" onclick="location.href= '<%=info.last[info.last.length - count_href]%>'" type="button">Read More</button>
+            </br>
+            <% count_href -= 1 
+          end %>   
+        </p>
+      </div>
       </div>
       </article>
       <%count += 1 %>
