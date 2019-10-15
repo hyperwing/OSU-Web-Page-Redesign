@@ -23,14 +23,14 @@ h3.article-src {
     font-size: 14px;
     font-weight: normal;
     text-align: left;
-    color:#ffffff;
+    color: $primary_white;
     animation: 2s fadein;
 }
 
 //delayed entry
 div.media-press-item {
     font-size: 18px;
-    color:#8F1001;
+    color: $primary_scarlet;
     visibility: hidden;
     font-weight: bold;
     animation: fadein 2s 1s;

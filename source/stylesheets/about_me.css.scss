@@ -12,7 +12,7 @@
   width: 15%;
   height: 100%;
   float: left;
-  background-color: #8F1001;
+  background-color: $primary_scarlet;
   padding-bottom: 200px;
 
   }
@@ -22,14 +22,15 @@
     height: 100%;
     float: left;
     margin-bottom: 200px;
+    text-align: center;
   }
 
   .right {
     width: 15%;
     height: 100%;
     position: relative;
-    // float: right;
-    background-color: #8F1001;
+    float: right;
+    background-color: $primary_scarlet;
     padding-bottom: 25%;
 
   }
