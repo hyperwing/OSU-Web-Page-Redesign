@@ -2,9 +2,7 @@
     Edited 10/11/2019 by Sri Ramya Dandu: Fixed dates for only year output, loop to print more info, load data from JSON
     Edited 10/12/2019 by Neel Mansukhani: Added page title and navbar
     Edited 10/12/2019 by Sri Ramya Dandu: Made it compatible with the layout
-    Edited 10/12/2019 by Sri Ramya Dandu: Inlcuded research intro
-    Edited 10/13/2019 by Neel Mansukhani: Rearranged files
-    Edited 10/14/2019 by Neel Mansukhani: Rearranged css
+    Edited 10/12/2019 by Sri Ramya Dandu: Inlcuded research intro 
 %>
 <%# HTML format for publication page. %>
 
@@ -26,15 +24,55 @@ dates =  ["Soon", "OCT 2019", "OCT 2019", "FEB 2019", "OCT 2018", "SEP 2017", "2
 'AUG 1996', '1994', '1994', 'OCT 1994']
 current_page.data.title = "Publications"
 current_page.data.stylesheet = "publications"
+
 %>
 
 <div class = "publications-page">
   <h1 class = "title"> Publications </h1>
-  <p id = "research"> Jim Davis's main research areas include Computer Vision, Artificial Intelligence, and </br>
-      Machine Learning with a focus on image/video analysis and automated surveillance. He </br>
-      has received over $3M in research funding (to date) from the National Science Foundation </br>
-      (including a prestigious CAREER award),U.S. Air Force, Los Alamos National Lab, U.S. </br>
-      Army Night Vision Laboratory, Intel, and Ohio Board of Regents. </p>
+      
+  </br>
+  </br>
+  <section>
+  <div class = "research-card">
+      <h2> Jim Davis's main research areas include:  </h2>
+        <p>  
+            - Computer Vision </br>
+            - Artificial Intelligence </br>
+            - Machine Learning* </br> </br>
+            <small> * focus on image/video analysis </small>
+      
+            <small>  and automated surveillance </small>
+          
+        </p>
+   </div>  
+
+      
+  <div class = "research-card">
+    <h2> Received over $3M in research funding from: </h2>
+      <p>  
+          - National Science Foundation* </br>
+          - U.S. Air Force and Los Alamos National Lab</br>
+          - U.S. Army Night Vision Laboratory </br>
+          - Intel and Ohio Board of Regents </br>
+    
+          <small> * including a prestigious CAREER award </small>  
+      </p>
+  </div>  
+  </section>
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+  </br>
+
   <div class = "timeline">
   <% count = 0 %>
   <% direction = "right" %> 
@@ -76,7 +114,9 @@ current_page.data.stylesheet = "publications"
           while count_href > 0 %>
             </br>
             <%# move to form instead of onclick %>
-            <button class = "button" onclick="location.href= '<%=info.last[info.last.length - count_href]%>'" type="button">Read More</button>
+              <a href="<%=info.last[info.last.length - count_href]%>">
+                <button class ="button">Read More </button> 
+              </a>
             </br>
             <% count_href -= 1 
           end %>   

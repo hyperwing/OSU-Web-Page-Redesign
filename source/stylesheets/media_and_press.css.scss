@@ -1,43 +1,54 @@
-// TODO: Add documentation
+// File created 10/11/2019 by Sharon Qiu
 // Edited 10/14/2019 by Neel Mansukhani: Rearranged css
-
+// Css for media and press page items.
 @import 'partials/site';
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-auto-rows: auto;
-    grid-gap: 30px;
+    grid-gap: 1.5%;
+    margin: 0% 10% 10% 10%;
 }
 
-/*Intended for title of the section (radio, print, etc)*/
+//Intended for title of the section (radio, print, etc)
 h2.section-name {
-    font-size: 30;
+    font-size: 50px;
     font-style: italic;
     font-weight: bold;
-    text-align: left;
     text-decoration-line: underline;
 }
 
-article.article-item {
-    display: block;
-}
-
+//Source of article
 section.article-src {
-    font-size: 12;
+    font-size: 14px;
     font-weight: normal;
     text-align: left;
+    color:#ffffff;
+    animation: 2s fadein;
 }
 
-.media-press-item {
-    font-size: 18;
+//delayed entry
+h3.media-press-item {
+    font-size: 18px;
+    color:#8F1001;
+    visibility: hidden;
     font-weight: bold;
+    animation: fadein 2s 1s;
+    animation-fill-mode: forwards;
 }
 
-a {
-    font-size: 10;
-    font-weight: normal;
+//links for media and press
+a.media-press-link {
+    padding: 0px;
+    margin: 15px;
 }
 
-
-
-
+//fadein effect for elements
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
