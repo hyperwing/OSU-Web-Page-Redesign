@@ -1,5 +1,6 @@
 /* File created 10/12/2019 by Sri Ramya Dandu */
 /* Edited 10/10/2019 by Sri Ramya Dandu */
+/* Edited 10/15/2019 by Sharon Qiu*/
 /* CSS for Publications Page */
 
 /* Created 10/10/2019 by Sri Ramya Dandu */
@@ -8,12 +9,14 @@
 
 @import 'partials/site';
 
+// Edited 10/15/2019 by Sharon Qiu: Edited height in h2.
 .publications-page .title, h2{
   color: $primary_scarlet ;
   font-size: 80px;
   text-align: center;
   position: relative;
   margin-bottom:0 ;
+  height: 10%;
 }
   
 .publications-page h2 {
@@ -42,11 +45,12 @@ section{
   margin-right: 0px;
 
 }
+// Edited 10/15/2019 by Sharon Qiu: Edited height in h1.
 .research-card h2{
   font-size: 15px;
   padding: 10px;
   color: $primary_scarlet;
- 
+  height:0%;
   border-top: double;
 }
 
