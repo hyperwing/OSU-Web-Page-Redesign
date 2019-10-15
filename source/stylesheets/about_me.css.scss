@@ -6,14 +6,20 @@
 
 @import 'partials/site';
 
-.about-me{
-  height:100%;
-  .left {
-  width: 15%;
+
+body {
   height: 100%;
-  float: left;
-  background-color: $primary_scarlet;
+  min-height: 100%;
   padding-bottom: 200px;
+}
+
+.about-me {
+  .left {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: #8F1001;
+    padding-bottom: 200px;
 
   }
 
@@ -22,56 +28,55 @@
     height: 100%;
     float: left;
     margin-bottom: 200px;
-    text-align: center;
   }
 
   .right {
     width: 15%;
     height: 100%;
-    position: relative;
     float: right;
-    background-color: $primary_scarlet;
-    padding-bottom: 25%;
+    background-color: #8F1001;
+    padding-bottom: 200px;
 
   }
 
 
   .cf {
-    position:relative;
-    height:400px;
-    margin-left:10%;
-    margin-right:10%;
+    position: relative;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
     animation-name: imageAnimation;
     animation-duration: 2s;
   }
 
   .cf img {
-    position:absolute;
-    left:0;
+    position: absolute;
+    left: 0;
     transition: opacity 3s ease-in-out;
   }
 
   .cf img.top:hover {
-    opacity:0;
+    opacity: 0;
   }
 
 
-  .side-image{
+  .side-image {
     animation-name: imageAnimation;
     animation-duration: 2s;
   }
 
 
-  h1{
-    font-size: 100px;  
+  h1 {
+    font-size: 100px;
     opacity: 1;
     text-align: center;
-    animation-name: subAnimation; 
+    animation-name: subAnimation;
     animation-duration: 2s;
+    margin-bottom:-40%;
   }
 
-  h2{
-    font-size: 50px;  
+  h2 {
+    font-size: 50px;
     opacity: 1;
     text-align: center;
 
@@ -80,40 +85,42 @@
     animation-delay: .2s;
   }
 
-  h3{
+  h3 {
     text-align: center;
-    display: inline-block;
-    line-height: 18pt;
-    overflow:hidden;
-    animation-name:subAnimation;
+    
+    animation-name: subAnimation;
     animation-duration: 2s;
     animation-delay: .2s;
   }
 
-
+  h4 {
+    opacity: 0;
+  }
 
   // Animation with speed for images.
   @keyframes imageAnimation {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    animation-name: subAnimation;
-    animation-duration: 2s;
-    animation-delay: .3s; 
-    animation-fill-mode: both;
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      animation-name: subAnimation;
+      animation-duration: 2s;
+      animation-delay: .3s;
+      animation-fill-mode: both;
     }
   }
 
   // Animation with speed for subtitles
   @keyframes subAnimation {
     0% {
-        transform: translateY(-50px);
-        opacity: 0;
+      transform: translateY(-50px);
+      opacity: 0;
     }
+
     100% {
       transform: translateY(0);
       opacity: 1;
@@ -121,39 +128,42 @@
   }
 
 
-  h3{
+  h3 {
     margin-left: 10%;
-    margin-right:10%;
-    animation-name:subAnimation;
+    margin-right: 10%;
+    animation-name: subAnimation;
     animation-duration: 2s;
     animation-delay: .2s;
   }
-  h4{
-    opacity:0;
+
+  h4 {
+    opacity: 0;
   }
 
   // Animation with speed for images.
   @keyframes imageAnimation {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    animation-name: subAnimation;
-    animation-duration: 2s;
-    animation-delay: .3s; 
-    animation-fill-mode: both;
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      animation-name: subAnimation;
+      animation-duration: 2s;
+      animation-delay: .3s;
+      animation-fill-mode: both;
     }
   }
 
   // Animation with speed for subtitles
   @keyframes subAnimation {
     0% {
-        transform: translateY(-50px);
-        opacity: 0;
+      transform: translateY(-50px);
+      opacity: 0;
     }
+
     100% {
       transform: translateY(0);
       opacity: 1;
