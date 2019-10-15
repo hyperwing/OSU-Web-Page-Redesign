@@ -1,9 +1,13 @@
-//File created 10/13/2019 by Leah Gillespie
-//File edited 10/14/2019 by Leah Gillespie
+// File created 10/13/2019 by Leah Gillespie
+// Edited 10/14/2019 by Leah Gillespie
+// Edited 10/15/2019 by Sharon Qiu
 
 @import 'partials/site';
+
+// Edited 10/15/2019 by Sharon Qiu: Edited height in h1.
 .appt_pg h1 {
   text-align: center;
+  height: 10%;
 }
 
 .appt_pg h2 {
@@ -18,21 +22,25 @@
 }
 
 .appt_pg h3 {
-  text-align: left;
   padding: 25px 10px 0;
   margin: 0;
   width: 50%;
   font-size: 30px;
 }
 
+.appt_pg .teaching h3 {
+  text-align: center;
+}
+
 .appt_pg .offerings h3 {
   font-size: 25px;
+  text-align: left;
 }
 
 .appt_pg p {
   font-size: large;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 .appt_pg .blurb p {
@@ -44,8 +52,8 @@
 .appt_pg .teaching p {
   text-align: left;
   font-style: italic;
-  padding: 5px;
-  width: 50%;
+  margin: 5px 0 5px 3%;
+  width: 48%;
   float: left;
 }
 

@@ -1,6 +1,8 @@
 // Created 10/10/2019 by Middleman
 // Edited 10/12/2019 by Sri Ramya Dandu: add the partials
 // Edited 10/14/2019 by Neel Mansukhani: Rearranged css and added constants
+// Edited 10/15/2019 by Sharon Qiu: Deleted height in a tag.
+// Edited 10/12/2019 by Sri Ramya Dandu: Changed conflciting tags
 
 /* CSS used across the website */
 
@@ -8,9 +10,10 @@
 
 //Constants used across the website:
 $shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.2);
-$background_gray: rgb(176,183,188);
+$background_gray: rgb(176, 183, 188);
 $primary_scarlet: #8F1001;
 $primary_gray: #333;
+$primary_white: #ffffff;
 
 
 @import 'page_navbar';
@@ -18,34 +21,31 @@ $primary_gray: #333;
 @import 'page_subheader';
 
 body {
-  background-color:  rgb(176,183,188);
+  background-color: $background_gray;
   font-family: Garamond;
   text-align: center;
   height: 100%;
   margin: 0;
   padding: 100px 0;
   font-weight: bold;
-  height: 100%;
-
 }
 
 a {
   color: rgba(#000, 0.7);
 
-    font:"garamond";
-    padding: 18vh 1rem;
-    text-align: center;
-    height: 100%;
+  font: "garamond";
+  padding: 18vh 1rem;
+  text-align: center;
 }
 
 h1 {
   font-family: Garamond;
   text-align: left;
-  height: 100%;
   margin: 50px;
-  padding: 0;
+  padding:0px;
   font-weight: bolder;
 }
+
 .image-animation {
   animation-name: imageAnimation;
   animation-duration: 2s;
@@ -55,34 +55,37 @@ h1 {
   animation-name: subAnimation;
   animation-duration: 2s;
 }
-  // Created 10/12/2019 by David Wing
-  // Edited 10/14/2019 by Neel Mansukhani: Moved to _site. 
-  // Animation with speed for images.
-  @keyframes imageAnimation {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-      animation-name: subAnimation;
-      animation-duration: 2s;
-      animation-delay: .3s; 
-      animation-fill-mode: both;
-      }
-    }
 
-    // Created 10/12/2019 by David Wing
-    // Edited 10/14/2019 by Neel Mansukhani: Moved to _site.   
-    // Animation with speed for subtitles
-    @keyframes subAnimation {
-      0% {
-          transform: translateY(-50px);
-          opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
+// Created 10/12/2019 by David Wing
+// Edited 10/14/2019 by Neel Mansukhani: Moved to _site. 
+// Animation with speed for images.
+@keyframes imageAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-name: subAnimation;
+    animation-duration: 2s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
+  }
+}
+
+// Created 10/12/2019 by David Wing
+// Edited 10/14/2019 by Neel Mansukhani: Moved to _site.   
+// Animation with speed for subtitles
+@keyframes subAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
