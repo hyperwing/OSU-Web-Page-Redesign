@@ -1,19 +1,23 @@
 {
   "0": {
     "description": "Recipient of Lutron Electronic’s Ruth and Joel Spira Teaching Award",
-    "date": "2019"
+    "date": "2019",
+    "img_link": "../../images/noteworthy/ruthandjoel.jpg"
   },
   "1": {
     "description": "Recipient of OSU College of Engineering Innovators Award",
     "date": "2015"
   },
   "2": {
-    "description": "Launched Polarity Maximizer commercial software and Audiomere (www.Audiomere.com)",
-    "date": "2014"
+    "description": "Launched Polarity Maximizer commercial software and Audiomere.",
+    "date": "2014",
+    "img_link": "../../images/noteworthy/audiomere.png",
+    "link": "http://www.audiomere.com"
   },
   "3": {
     "description": "Promoted to Full Professor",
-    "date": "September 2013"
+    "date": "September 2013",
+    "img_link": "../../images/noteworthy/jd.jpg"
   },
   "4": {
     "description": "Recipient of OSU College of Engineering Lumley Research Award",
@@ -25,7 +29,8 @@
   },
   "6": {
     "description": "Workshop Co-Chair, IEEE Conference on Computer Vision and Pattern Recognition",
-    "date": "2014"
+    "date": "2014",
+    "img_link": "../../images/noteworthy/ieee.png"
   },
   "7": {
     "description": "Best Paper Award: \"Attention-based Target Localization using Multiple Instance Learning\", International Symposium on Visual Computing",

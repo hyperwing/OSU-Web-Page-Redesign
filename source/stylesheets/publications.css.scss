@@ -5,6 +5,7 @@
 /* Edited 10/14/2019 by Sri Ramya Dandu: Added research */
 /* Edited 10/14/2019 by Sri Ramya Dandu: Changed colors to variables */
 /* Edited 10/15/2019 by Sri Ramya Dandu: Changed format of research and resizing */
+/* Edited 10/15/2019 by Neel Mansukhani: Set overflow to auto */
 /* CSS for Publications Page */
 
 /* Created 10/10/2019 by Sri Ramya Dandu */
@@ -36,7 +37,9 @@ section{
   border-top: double;
   border-color: $primary_scarlet;
 }
-
+section {
+  overflow-y: auto;
+}
 .research-card:first-child{
   width:50%;
   float:left;
