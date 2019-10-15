@@ -1,5 +1,7 @@
-<%# File Created 10/14/2019 by Neel Mansukhani
+<%#     File Created 10/14/2019 by Neel Mansukhani
+        Edited 10/15/2019 by Neel Mansukhani: Redid noteworthy.
 %>
+
 <%# HTML format for noteworthy page. %>
 <%
 require 'json'
@@ -8,11 +10,47 @@ noteworthy = JSON.parse File.read "#{html_dir}/../data/noteworthy.json"
 current_page.data.title = "Noteworthy"
 current_page.data.stylesheet = "noteworthy"
 %>
-<% count = 0 %>
-<% noteworthy.each_key do |id|%>
-        <%= partial "partials/noteworthy_item",
-                    :locals => {:description => noteworthy[id]['description'],
-                                :date => noteworthy[id]['date'],
-                                :text_right => count % 2 == 0 } %>
-        <% count += 1 %>                        
-<% end %>
+<div class="top">
+    <div class="headline-container">
+        <%= partial "partials/noteworthy/headline_item",
+                :locals => {    :description => noteworthy['3']['description'],
+                                :date => noteworthy['3']['date'],
+                                :img => noteworthy['3']['img_link'] } %>        
+    </div>
+    <div class="sub-headline-container">
+        <% [0,2,6].each do |id| %>
+            <% key = id.to_s %>
+            <%= partial "partials/noteworthy/sub_headline_item",
+                :locals => {    :description => noteworthy[key]['description'],
+                                :date => noteworthy[key]['date'],
+                                :img => noteworthy[key]['img_link'],
+                                :link => noteworthy[key]['link']} %>                       
+        <% end %>
+    </div>
+</div>
+<div class="bottom">
+    <div class="one">
+        <% [1,7,10,13,16].each do |id| %>
+                <% key = id.to_s %>
+                <%= partial "partials/noteworthy/default_item",
+                    :locals => {    :description => noteworthy[key]['description'],
+                                    :date => noteworthy[key]['date']} %>
+        <% end %>
+    </div>
+    <div class="two">
+        <% [4,8,11,14,17].each do |id| %>
+            <% key = id.to_s %>
+            <%= partial "partials/noteworthy/default_item",
+                :locals => {    :description => noteworthy[key]['description'],
+                                :date => noteworthy[key]['date']} %>
+        <% end %>
+    </div>
+    <div class="three">
+        <% [5,9,12,15,18].each do |id| %>
+            <% key = id.to_s %>
+            <%= partial "partials/noteworthy/default_item",
+                :locals => {    :description => noteworthy[key]['description'],
+                                :date => noteworthy[key]['date']} %>
+        <% end %>
+    </div>
+</div>
