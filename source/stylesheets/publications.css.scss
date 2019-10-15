@@ -23,40 +23,36 @@
 }
 
 section{
-  width: 100%;
-  margin: 0 0 80px 0;
   position: relative;
-}
-
-.research-card {
-  border-radius: 6px;
-  float: right;
-  width: 30%;
-  margin-left: 0px;
-  margin-right: 300px;
+  overflow-y: scroll;
+  width:50%;
+  margin-left:25%;
+  border-bottom: double;
+  border-top: double;
+  border-color: $primary_scarlet;
 }
 
 .research-card:first-child{
-  float: left;
-  margin-left: 276px;
-  margin-right: 0px;
-
+  width:50%;
+  float:left;
 }
+.research-card:nth-child(2){
+  width:50%;
+  float:left;
+}
+
 .research-card h2{
   font-size: 15px;
   padding: 10px;
   color: $primary_scarlet;
- 
-  border-top: double;
 }
 
 .research-card p{
   font-size: 15px;
   padding: 20px;
   margin: 0;
+  height: 100px;
   color:$primary_gray;
-  border-bottom: double;
-  border-color: $primary_scarlet;
   text-align: left;
   position:relative;
 }
