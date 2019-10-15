@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-auto-rows: auto;
-    grid-gap: 1.5%;
+    grid-gap: 1%;
     margin: 0% 10% 10% 10%;
 }
 
@@ -19,7 +19,7 @@ h2.section-name {
 }
 
 //Source of article
-section.article-src {
+h3.article-src {
     font-size: 14px;
     font-weight: normal;
     text-align: left;
@@ -28,7 +28,7 @@ section.article-src {
 }
 
 //delayed entry
-h3.media-press-item {
+div.media-press-item {
     font-size: 18px;
     color:#8F1001;
     visibility: hidden;
