@@ -22,20 +22,10 @@
   margin-top:0 ;
 }
 
-.publications-page #research {
-  font-size: 18px;
-  color:$primary_gray;
-  margin-top:5px;
-}
-  
-.publications-page table{
-	text-align: left;
-  margin-left: 20%;
-  padding: 20px;
-}
-.publications-page table td{
-  font-size : 14px;
-  padding-right: 170px;
+section{
+  width: 100%;
+  margin: 0 0 80px 0;
+  position: relative;
 }
 
 .research-card {
@@ -43,22 +33,21 @@
   float: right;
   width: 30%;
   margin-left: 0px;
-  margin-right: 202px;
-  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 6px 6px 21px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 300px;
 }
 
 .research-card:first-child{
   float: left;
-  margin-left: 220px;
+  margin-left: 276px;
   margin-right: 0px;
 
 }
 .research-card h2{
   font-size: 15px;
   padding: 10px;
-  color: #ffffff;
-  background-color: $primary_scarlet;
-  border-radius: 6px 6px 0 0;
+  color: $primary_scarlet;
+ 
+  border-top: double;
 }
 
 .research-card p{
@@ -66,9 +55,7 @@
   padding: 20px;
   margin: 0;
   color:$primary_gray;
-  background-color: white;
-  border-radius: 0 0 6px 6px;
-  border:solid;
+  border-bottom: double;
   border-color: $primary_scarlet;
   text-align: left;
   position:relative;
@@ -145,7 +132,7 @@
       }
 
       span.only_year {
-        font-size: 22px;
+        font-size: 21px;
       }
     }
 
