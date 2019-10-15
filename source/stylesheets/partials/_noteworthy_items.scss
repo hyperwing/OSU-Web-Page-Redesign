@@ -1,0 +1,98 @@
+// File Created 10/14/2019 by Neel Mansukhani
+// Edited 10/15/2019 by Neel Mansukhani: Redid noteworthy
+
+/* Partial css for 3 containers of noteworthy information. */
+.headline {
+    $width: 800px;
+    $height: 490px;
+    width: $width;
+    height: $height;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: $primary_scarlet;
+    margin: 0px 25px 50px 0px;    
+    div.picture {
+        display: block;
+        width: $width;
+        height: $height - 200px;
+        img {
+            width: $width;
+            height: $height - 200px;
+            border-radius: 25px 25px 0 0;
+            padding: 0 10px 0 0;
+        }
+    }
+    div.text-container {
+        display: block;
+        width: $width;
+        height: $width - $height + 200px;
+        div.description {
+            font-size: 50px;
+        }
+        span.date {
+            position: relative;
+            bottom: -90px;
+        }        
+    }
+}
+.sub-headline {
+    $width: 400px;
+    $height: 150px;
+    width: $width;
+    height: $height;
+    display: block;
+    border-radius: 25px;
+    background-color: $primary_scarlet;
+    margin: 0 0 20px 0;
+    div.picture {
+        display: table-cell;
+        img {
+            float: left;
+            width: $height;
+            height: $height;
+            border-radius: 25px 0 0 25px;
+        }
+    }    
+    div.text-container {
+        width: $width - $height - 20px;
+        height: $height - 20px;
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        span.date {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+        }
+    }
+    .link {
+        margin: 10px 0 0 0;
+        .button {
+            float: left;
+            font-family: Garamond;
+            font-size: 13px;
+            padding: 20px, 15px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border: solid;
+            border-color: #333;
+            border-radius: 15px;
+            color:$primary_gray;
+        }
+    }
+      .button:hover {background-color: $background_gray}
+  
+      .button:active {
+        background-color: #666666;
+      }  
+}
+.default {
+    width: 400px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: $primary_scarlet;
+    margin: 0px 25px 10px 0px;
+}
