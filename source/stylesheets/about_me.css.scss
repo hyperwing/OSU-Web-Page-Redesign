@@ -10,10 +10,14 @@
   body{
     height:100%;
     min-height:100%;
-    padding-bottom: 200px;
   }
 
 .about-me{
+
+  height:100%;
+  margin-bottom:40%;
+
+
   .left {
   width: 15%;
   height: 100%;
@@ -31,12 +35,12 @@
   }
 
   .right {
-  width: 15%;
-  height: 100%;
-  position: relative;
-  float: right;
-  background-color: #8F1001;
-  padding-bottom: 30%;
+    width: 15%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-color: #8F1001;
+    padding-bottom: 25%;
 
   }
 
@@ -62,8 +66,8 @@
 
 
   .side-image{
-  animation-name: imageAnimation;
-  animation-duration: 2s;
+    animation-name: imageAnimation;
+    animation-duration: 2s;
   }
 
 
@@ -87,14 +91,15 @@
 
   h3{
     text-align: center;
-
+    display: inline-block;
+    line-height: 18pt;
+    overflow:hidden;
     animation-name:subAnimation;
     animation-duration: 2s;
     animation-delay: .2s;
   }
-  h4{
-    opacity:0;
-  }
+
+
 
   // Animation with speed for images.
   @keyframes imageAnimation {
