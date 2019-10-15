@@ -117,9 +117,8 @@ section{
         left: 50%;
         margin: 0 0 0 -32px;
         border-radius: 100%;
-        background: $background_gray;
         color:$primary_scarlet;
-        border: 2px solid $background_gray;
+        border: 2px solid;
         box-shadow: 0 0 0 7px  $primary_scarlet, 6px 6px 15px 0 rgba(0, 0, 0, 0.2), 6px 6px 15px 0 rgba(0, 0, 0, 0.19);
         font-weight: bold;
         text-align: center;
@@ -187,13 +186,9 @@ section{
       float: right;
       font-family: Garamond;
       font-size: 13px;
-      padding: 20px,15px;
+      padding: 3px;
       border-radius: 15px;
       text-align: center;
-      text-decoration: none;
-      outline: none;
-      border: none;
-      border-radius: 15px;
       color:$primary_gray;
       box-shadow: 0 0 0 2px  $primary_scarlet;
     }
