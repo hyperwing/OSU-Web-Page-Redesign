@@ -1,0 +1,46 @@
+/* File created 10/15/2019 by Sri Ramya Dandu */
+/* CSS for Directions Page */
+
+@import 'partials/site';
+
+.directions{
+    color: $primary-gray;
+}
+.directions h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.directions dl{
+    text-align: left;
+    margin-left: 40px;
+    
+}
+
+.directions p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.directions dt, .airport-directions h3, .end-note h3{
+    color: $primary-scarlet;
+    font-size: 20px;
+}
+
+.airport-directions {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.end-note {
+    text-align: left;
+    margin-left: 40px;
+}
+.end-note p{
+    font-size: 16px;
+    margin-left: 27px;
+}
+
+a{
+    padding: 0px;
+}
