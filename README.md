@@ -31,8 +31,8 @@ Also list if people worked together (pair programmed) on a particular section.
 > gem install middleman
 2. Install other dependices 
 > bundle install 
-2. Compile with middleman
+3. Compile with middleman
 > bundle exec middleman build
-3. Run using middleman server
+4. Run using middleman server
 > bundle exec middleman server
-4. Naviagte to the link that the terminal prints to see the website 
+5. Naviagte to the link that the terminal prints to see the website 
