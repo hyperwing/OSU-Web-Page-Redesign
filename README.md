@@ -1,7 +1,6 @@
 # Project 4
 ### Static Web Design
-This program redesigns the Professor Jim Davis's webpage that can be found at the following link: https://web.cse.ohio-state.edu/~davis.1719/
-
+This program redesigns the Professor Jim Davis's webpage that can be found at the following link: https://web.cse.ohio-state.edu/~davis.1719/.
 
 ### Roles
 * Overall Project Manager: Sri Ramya Dandu
@@ -16,9 +15,9 @@ Also list if people worked together (pair programmed) on a particular section.
 #### Pages:
 * David Wing: About Me/Main Page/Education 
 * Leah Gillespie: Appointment/Teaching
-* Sri Ramya Dandu: Publications
+* Sri Ramya Dandu: Publications & Directions 
 * Sharon Qiu: Media & Press
-* Neel Mansukhani: Noteworthy/People
+* Neel Mansukhani: Noteworthy & People
 
 #### CSS Style Sheet
 * Neel Mansukhani: Header
@@ -30,3 +29,6 @@ Also list if people worked together (pair programmed) on a particular section.
 ### How to run the project
 1. Compile with middleman
 > bundle exec middleman build
+2. Run using middleman server
+> bundle exec middleman server
+3. Naviagte to the link that the terminal prints to see the website 
