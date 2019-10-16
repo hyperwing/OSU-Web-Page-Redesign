@@ -6,7 +6,7 @@
 @import 'partials/noteworthy_items';
 div.top, div.bottom {
     display: inline-block;
-    color: white;
+    color: $primary_white;
 }
 div.top {
     text-align: left; 
