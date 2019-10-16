@@ -24,11 +24,11 @@ height: 0px;
 position:relative;
     width:auto;
     height:130px;
-    background-color:#333;
+    background-color:$primary_gray;
     overflow: auto;
     overflow-y: hidden;
     display: flex;
-    color: rgb(176,183,188);
+    color: $background_gray;
 }
 
 #footer h3{
@@ -37,17 +37,17 @@ text-align: center;
 
 /* unvisited link */
 #footer a:link {
-    color:rgb(176,183,188);
+    color:$background_gray;
   }
   
   /* visited link */
 #footer a:visited {
-    color: black;
+    color: $primary_black;
   }
   
   /* mouse over link */
 #footer a:hover {
-    color: white;
+    color: $primary_white;
   }
   
 .osu_info,  .contact_info{
