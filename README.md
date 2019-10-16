@@ -27,8 +27,11 @@ Also list if people worked together (pair programmed) on a particular section.
 * David Wing: Color theme
 
 ### How to run the project
-1. Compile with middleman
+1. Install the middleman gem and other dependices 
+> gem install middleman
+> bundle install 
+2. Compile with middleman
 > bundle exec middleman build
-2. Run using middleman server
+3. Run using middleman server
 > bundle exec middleman server
-3. Naviagte to the link that the terminal prints to see the website 
+4. Naviagte to the link that the terminal prints to see the website 
