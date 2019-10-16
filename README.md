@@ -15,7 +15,7 @@ Also list if people worked together (pair programmed) on a particular section.
 #### Pages:
 * David Wing: About Me/Main Page/Education 
 * Leah Gillespie: Appointment/Teaching
-* Sri Ramya Dandu: Publications & Directions 
+* Sri Ramya Dandu: Publications & Directions (linked to in the footer)
 * Sharon Qiu: Media & Press
 * Neel Mansukhani: Noteworthy & People
 
