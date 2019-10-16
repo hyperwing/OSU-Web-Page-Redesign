@@ -1,6 +1,7 @@
-// File created 10/11/2019 by Sharon Qiu
-// Edited 10/14/2019 by Neel Mansukhani: Rearranged css
-// Css for media and press page items.
+/* File created 10/11/2019 by Sharon Qiu */
+/* Edited 10/14/2019 by Neel Mansukhani: Rearranged css */
+
+/* CSS for media and press page items. */
 @import 'partials/site';
 .grid {
     display: grid;
@@ -51,6 +52,11 @@ div.media-press-item {
 a.media-press-link {
     padding: 0px;
     margin: 15px;
+}
+
+//links for media and press
+hr {
+    margin:10%;
 }
 
 //fadein effect for elements

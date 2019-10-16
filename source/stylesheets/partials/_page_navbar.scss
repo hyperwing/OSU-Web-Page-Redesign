@@ -1,7 +1,7 @@
-// File created 10/12/2019 by Sri Ramya Dandu
-// Edited 10/11/2019 by Neel Mansukhani: Created style for navbar
-// Edited 10/12/2019 by Sri Ramya Dandu: Moved navbar style to separate file
-// Edtied 10/14/2019 by Neel Mansukhani: css rearranged
+/* File created 10/12/2019 by Sri Ramya Dandu */
+/* Edited 10/11/2019 by Neel Mansukhani: Created style for navbar */
+/* Edited 10/12/2019 by Sri Ramya Dandu: Moved navbar style to separate file */
+/* Edtied 10/14/2019 by Neel Mansukhani: css rearranged */
 
 /* CSS for navbar */
 
@@ -16,8 +16,8 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
-        z-index:1;
+        background-color: $primary_gray;
+        z-index: 1;
     }
     
     li {
@@ -26,7 +26,7 @@
     
     li a {
         display: inline-block;
-        color: white;
+        color: $primary_white;
         text-align: center;
         vertical-align: text-bottom;
         padding: 30px 16px;
@@ -38,15 +38,7 @@
     }
     
     .active {
-        background-color:#8F1001;
+        background-color:$primary_scarlet;
     }
 
-    /*
-    p {
-        color: #ffffff;
-        display: inline-block;
-        font-size: 25px;
-        font-style: italic;
-    }
-    */
 }

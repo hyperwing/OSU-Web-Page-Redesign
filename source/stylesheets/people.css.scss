@@ -1,6 +1,6 @@
-// File Created 10/11/2019 by Neel Mansukhani
-// File Edited 10/13/2019 by Neel Mansukhani: Added tabs
-// Edited 10/14/2019 by Neel Mansukhani: Rearranged css
+/* File Created 10/11/2019 by Neel Mansukhani */
+/* File Edited 10/13/2019 by Neel Mansukhani: Added tabs */
+/* Edited 10/14/2019 by Neel Mansukhani: Rearranged css */
 
 /* CSS for people page */
 @import 'partials/site';
@@ -8,10 +8,10 @@
 .buttons {
     padding: 0 0 47px 40px;
     .tablink {
-        background-color: #333;
+        background-color: $primary_gray;
         font-family: Garamond;
         font-weight: bold;
-        color: white;
+        color: $primary_white;
         float: left;
         border: none;
         outline: none;
@@ -20,7 +20,7 @@
         font-size: 17px;
         width: 25%;
     }
-    #selected {background-color: #8F1001;}
+    #selected {background-color: $primary_scarlet;}
 }    
   
   .tablink:hover {
@@ -31,10 +31,10 @@
   .tabcontent {
     margin: 0 40px;
     width: 90%;  
-    border-color: #8F1001;;
+    border-color: $primary_scarlet;
     border-style: solid;
     border-width: 2px;
-    color: white;
+    color: $primary_white;
     padding: 100px 20px;
     height: 100%;
 

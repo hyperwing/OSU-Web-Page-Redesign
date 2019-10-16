@@ -1,6 +1,11 @@
 /* File created 10/12/2019 by Sri Ramya Dandu */
-/* Edited 10/10/2019 by Sri Ramya Dandu */
-/* Edited 10/15/2019 by Sharon Qiu*/
+/* Edited 10/10/2019 by Sri Ramya Dandu: Cleaned up css */
+/* Edited 10/11/2019 by Sri Ramya Dandu: Modified CSS to make it look nicer*/
+/* Edited 10/13/2019 by Sri Ramya Dandu: Changed the links to CSS */
+/* Edited 10/14/2019 by Sri Ramya Dandu: Added research */
+/* Edited 10/14/2019 by Sri Ramya Dandu: Changed colors to variables */
+/* Edited 10/15/2019 by Sri Ramya Dandu: Changed format of research and resizing */
+/* Edited 10/15/2019 by Neel Mansukhani: Set overflow to auto */
 /* CSS for Publications Page */
 
 /* Created 10/10/2019 by Sri Ramya Dandu */
@@ -9,7 +14,6 @@
 
 @import 'partials/site';
 
-// Edited 10/15/2019 by Sharon Qiu: Edited height in h2.
 .publications-page .title, h2{
   color: $primary_scarlet ;
   font-size: 80px;
@@ -25,43 +29,40 @@
 }
 
 section{
-  width: 100%;
-  margin: 0 0 80px 0;
   position: relative;
+  overflow-y: scroll;
+  width:50%;
+  margin-left:25%;
+  border-bottom: double;
+  border-top: double;
+  border-color: $primary_scarlet;
 }
-
-.research-card {
-  border-radius: 6px;
-  float: right;
-  width: 30%;
-  margin-left: 0px;
-  margin-right: 300px;
+section {
+  overflow-y: auto;
 }
-
 .research-card:first-child{
-  float: left;
-  margin-left: 276px;
-  margin-right: 0px;
-
+  width:50%;
+  float:left;
+}
+.research-card:nth-child(2){
+  width:50%;
+  float:left;
 }
 .research-card h2{
   font-size: 15px;
   padding: 10px;
   color: $primary_scarlet;
-  border-top: double;
 }
 
 .research-card p{
   font-size: 15px;
   padding: 20px;
   margin: 0;
+  height: 100px;
   color:$primary_gray;
-  border-bottom: double;
-  border-color: $primary_scarlet;
   text-align: left;
   position:relative;
 }
-
 
 /* set up of vertical line */
 .publications-page .timeline:before {
@@ -120,7 +121,7 @@ section{
         background: $background_gray;
         color:$primary_scarlet;
         border: 2px solid $background_gray;
-        box-shadow: 0 0 0 7px  $primary_scarlet, 6px 6px 15px 0 rgba(0, 0, 0, 0.2), 6px 6px 15px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 0 0 6px  $primary_scarlet, 6px 6px 15px 0 rgba(0, 0, 0, 0.2), 6px 6px 15px 0 rgba(0, 0, 0, 0.19);
         font-weight: bold;
         text-align: center;
             
@@ -174,8 +175,8 @@ section{
       font-size: 15px;
       padding: 20px;
       margin: 0;
-      color:$primary_gray;
-      background-color:white;
+      color: $primary_gray;
+      background-color: $primary_white;
       border-radius: 0 0 6px 6px;
       border:solid;
       border-color: $primary_scarlet;
@@ -187,13 +188,9 @@ section{
       float: right;
       font-family: Garamond;
       font-size: 13px;
-      padding: 20px,15px;
+      padding: 3px;
       border-radius: 15px;
       text-align: center;
-      text-decoration: none;
-      outline: none;
-      border: none;
-      border-radius: 15px;
       color:$primary_gray;
       box-shadow: 0 0 0 2px  $primary_scarlet;
     }

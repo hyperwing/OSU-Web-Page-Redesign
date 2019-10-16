@@ -1,3 +1,31 @@
-// File Created 10/14/2019 by Neel Mansukhani
+/* File Created 10/14/2019 by Neel Mansukhani */
+/* Edited 10/15/2019 by Neel Mansukhani: Redid noteworthy */
+
+/* CSS for noteworthy page */
 @import 'partials/site';
-@import 'partials/noteworthy_item';
+@import 'partials/noteworthy_items';
+div.top, div.bottom {
+    display: inline-block;
+    color: white;
+}
+div.top {
+    text-align: left; 
+    div.headline-container {
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.sub-headline-container {
+        display: inline-block;
+    }
+}
+div.bottom {
+    $col-width: 410px;
+    .one, .two, .three {
+        vertical-align: top;
+        width: $col-width;
+        display: inline-block;
+    }
+}
+div.text-container {
+    padding: 10px;
+}
