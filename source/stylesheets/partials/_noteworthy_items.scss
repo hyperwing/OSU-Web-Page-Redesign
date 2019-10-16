@@ -68,6 +68,7 @@
     .link {
         margin: 10px 0 0 0;
         .button {
+            background-color: $primary_white;
             float: left;
             font-family: Garamond;
             font-size: 13px;
@@ -79,7 +80,7 @@
             border: solid;
             border-color: $primary_gray;
             border-radius: 15px;
-            color:$primary_gray;
+            color: $primary_gray;
         }
     }
       .button:hover {background-color: $background_gray}

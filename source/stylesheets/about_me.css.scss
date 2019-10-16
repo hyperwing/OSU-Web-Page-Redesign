@@ -102,4 +102,78 @@ body {
     opacity: 0;
   }
 
+  // Animation with speed for images.
+  @keyframes imageAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      animation-name: subAnimation;
+      animation-duration: 2s;
+      animation-delay: .3s;
+      animation-fill-mode: both;
+    }
+  }
+
+  // Animation with speed for subtitles
+  @keyframes subAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  h3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    animation-name: subAnimation;
+    animation-duration: 2s;
+    animation-delay: .2s;
+  }
+
+  h4 {
+    opacity: 0;
+  }
+
+  // Animation with speed for images.
+  @keyframes imageAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      animation-name: subAnimation;
+      animation-duration: 2s;
+      animation-delay: .3s;
+      animation-fill-mode: both;
+    }
+  }
+
+  // Animation with speed for subtitles
+  @keyframes subAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
 }
