@@ -9,6 +9,7 @@ div.top, div.bottom {
     color: $primary_white;
 }
 div.top {
+    width: 1230px;
     text-align: left; 
     div.headline-container {
         display: inline-block;
@@ -19,6 +20,7 @@ div.top {
     }
 }
 div.bottom {
+    width: 1240px;
     $col-width: 410px;
     .one, .two, .three {
         vertical-align: top;
