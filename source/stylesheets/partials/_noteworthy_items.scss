@@ -1,7 +1,7 @@
-// File Created 10/14/2019 by Neel Mansukhani
-// Edited 10/15/2019 by Neel Mansukhani: Redid noteworthy
+/* File Created 10/14/2019 by Neel Mansukhani */
+/* Edited 10/15/2019 by Neel Mansukhani: Redid noteworthy */
 
-/* Partial css for 3 containers of noteworthy information. */
+/* Partial CSS for 3 containers of noteworthy information. */
 .headline {
     $width: 800px;
     $height: 490px;
@@ -77,7 +77,7 @@
             text-decoration: none;
             outline: none;
             border: solid;
-            border-color: #333;
+            border-color: $primary_gray;
             border-radius: 15px;
             color:$primary_gray;
         }

@@ -17,6 +17,7 @@ current_page.data.stylesheet = "noteworthy"
                                 :date => noteworthy['3']['date'],
                                 :img => noteworthy['3']['img_link'] } %>        
     </div>
+    <%# Arrays that are used in the following divs are used to generate data from the hash in a specific order %>
     <div class="sub-headline-container">
         <% [0,2,6].each do |id| %>
             <% key = id.to_s %>

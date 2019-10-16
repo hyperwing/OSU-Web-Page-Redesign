@@ -3,14 +3,14 @@
 <%# Partial for sub headlines %>
 <div class="sub-headline image-animation shadow">
         <div class="picture">
-            <img src="<%= img %>"/>
+            <img src="<%= img %>" alt="sub-headline image"/>
         </div>
         <div class="text-container">
             <div class="description"><%= description %></div>
             <% if !link.nil? %>
                 <div class="link">
                     <a href="<%= link %>" target="_blank">
-                        <button class ="button">Visit Here&#62</button> 
+                        <button class="button">Visit Here&#62;</button> 
                     </a>
                 </div>                
             <% end %>

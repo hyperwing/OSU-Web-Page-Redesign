@@ -1,15 +1,14 @@
-// Created 10/10/2019 by Middleman
-// Edited 10/12/2019 by Sri Ramya Dandu: add the partials
-// Edited 10/12/2019 by Sri Ramya Dandu: Changed conflciting tags
-// Edited 10/14/2019 by Neel Mansukhani: Rearranged css and added constants
-// Edited 10/15/2019 by Sharon Qiu: Deleted height in a tag.
-// Edited 10/15/2019 by Neel Mansukhani: Added global shadow class.
+/* Created 10/10/2019 by Middleman */
+/* Edited 10/12/2019 by Sri Ramya Dandu: add the partials */
+/* Edited 10/12/2019 by Sri Ramya Dandu: Changed conflciting tags */
+/* Edited 10/14/2019 by Neel Mansukhani: Rearranged css and added constants */
+/* Edited 10/15/2019 by Sharon Qiu: Deleted height in a tag. */
+/* Edited 10/15/2019 by Neel Mansukhani: Added global shadow class. */
 
 /* CSS used across the website */
 
-// TODO: add variables for color and other stuff.
 
-//Constants used across the website:
+/*Constants used across the website: */
 $shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.2);
 $background_gray: rgb(176, 183, 188);
 $primary_scarlet: #8F1001;
@@ -62,9 +61,9 @@ h1 {
 }
 
 
-// Created 10/12/2019 by David Wing
-// Edited 10/14/2019 by Neel Mansukhani: Moved to _site. 
-// Animation with speed for images.
+/* Created 10/12/2019 by David Wing */
+/* Edited 10/14/2019 by Neel Mansukhani: Moved to _site. */
+/* Animation with speed for images. */
 @keyframes imageAnimation {
   0% {
     transform: translateY(-50px);
@@ -81,9 +80,9 @@ h1 {
   }
 }
 
-// Created 10/12/2019 by David Wing
-// Edited 10/14/2019 by Neel Mansukhani: Moved to _site.   
-// Animation with speed for subtitles
+/* Created 10/12/2019 by David Wing */
+/* Edited 10/14/2019 by Neel Mansukhani: Moved to _site. */   
+/* Animation with speed for subtitles */
 @keyframes subAnimation {
   0% {
     transform: translateY(-50px);

@@ -1,9 +1,11 @@
-// File Created 10/10/2019 by David Wing
-// Edited 10/11/2019 by David Wing
-// Edited 10/12/2019 by David Wing
-// Edited 10/13/2019 by David Wing
-// Edited 10/14/2019 by Neel Mansukhani: Rearranged css and moved animations to site partial.
-// Edited 10/15/2019 by Sharon Qiu: Edited paddings in left. middle, and right classes.
+/* File Created 10/10/2019 by David Wing */
+/* Edited 10/11/2019 by David Wing */
+/* Edited 10/12/2019 by David Wing */
+/* Edited 10/13/2019 by David Wing */
+/* Edited 10/14/2019 by Neel Mansukhani: Rearranged css and moved animations to site partial. */
+/* Edited 10/15/2019 by Sharon Qiu: Edited paddings in left. middle, and right classes. */
+
+/* CSS for about me page */
 
 @import 'partials/site';
 
@@ -18,7 +20,7 @@ body {
     width: 14%;
     height: 100%;
     display: inline-block;
-    background-color: #8F1001;
+    background-color: $primary_scarlet;
     padding-bottom: 0%;
     vertical-align: top;
   }
@@ -36,7 +38,7 @@ body {
     width: 14%;
     height: 100%;
     display: inline-block;
-    background-color: #8F1001;
+    background-color: $primary_scarlet;
     padding-bottom: 10%;
     vertical-align: top;
 
