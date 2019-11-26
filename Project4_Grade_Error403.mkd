@@ -1,0 +1,34 @@
+1. Implementation
+    - Grade: 67/78
+    - Comment: 
+        * Correctness: Website is an improvement over the original website and there appears to be no broken links.
+        * Look/Feel:
+		* Website has nice looking design and it is very easy to find everything
+		* Front page image is VERY stretched out at normal fullscreen. (-1)
+        * Style: 
+		* Json is Used to store data. This is fine. However there is no need to parse out the data. (-5)
+			This makes your code alot more complicated and hard to edit for no reason. Middleman has built in functions to
+			access JSON and YAML files. 
+        * Design:
+		* Some usage of partials here is good such as header and footer is good. However having 3 diffent partials for an item seems excessive. (-1)
+		* Also your file structure is a bit confusing with no defined structure. (-1)
+		* CSS is a mess. Typically you want to have a cohesive style throughout the website and not have a separate CSS file for each page. Also Partials for css does not make sense. (-3)
+        * Extra Features: Header Footer. Fade in on images and list items on pages.
+		
+2. Balanced work load
+    - Grade: 7/10
+    - Comment: Leah Gillespie did far less work than other. Also Sri Ramya Dandu's Github contributions broke so please fix that.
+3. Documentation
+    - Grade: 5/5
+    - Comment: Complete Documentation throughout.
+4. Testing
+    - Grade: 3/5
+    - Comment: No mention of how the website was tested.
+5. README file
+    - Grade: 2/2
+    - Comment: Impressive Readme.
+
+Total: 84/100  
+Comment: 
+Fine website. You really gave yourselves alot of extra work by creating the datastorage yourselves instead of using Middleman to do so. Also, your project implementation was messy.  
+Graded By: Michael Hemmelgarn
