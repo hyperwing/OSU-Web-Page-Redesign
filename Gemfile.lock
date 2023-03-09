@@ -109,7 +109,7 @@ GEM
     parallel (1.22.1)
     public_suffix (4.0.7)
     racc (1.6.0)
-    rack (2.2.3.1)
+    rack (2.2.6.3)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -132,6 +132,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    unf_ext (0.0.8.2-x64-mingw32)
     wdm (0.1.1)
     webrick (1.7.0)
     webrobots (0.1.2)
